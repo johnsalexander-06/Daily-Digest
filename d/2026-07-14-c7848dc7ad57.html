@@ -273,4 +273,10 @@ function showTab(id, btn) {
   var target = document.getElementById(id);
   if (target) { target.classList.add('active'); }
   var buttons = document.querySelectorAll('nav.tabs button');
-  for (var j = 0; j < buttons.length; j++) { button
+  for (var j = 0; j < buttons.length; j++) { buttons[j].classList.remove('active'); }
+  if (btn) { btn.classList.add('active'); }
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
