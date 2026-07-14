@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Digest — Tuesday, July 14, 2026</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin:0; background:#0f172a; color:#e2e8f0;
+  font-family:'Georgia','Times New Roman',serif; padding:24px 20px;
+}
+.wrap { max-width:820px; margin:0 auto; }
+.kicker { font-size:11px; letter-spacing:3px; color:#64748b; text-transform:uppercase; margin-bottom:6px; font-family:monospace; }
+h1.date { font-size:22px; font-weight:700; margin:0 0 16px; color:#f1f5f9; }
+.breaking {
+  background:linear-gradient(135deg,#450a0a 0%,#1e293b 100%);
+  border:1px solid #dc2626; border-left:4px solid #ef4444;
+  border-radius:8px; padding:16px 20px; margin-bottom:20px;
+}
+.breaking .hdr {
+  font-size:11px; font-weight:700; letter-spacing:2px; color:#ef4444;
+  text-transform:uppercase; font-family:monospace; margin-bottom:12px;
+  display:flex; align-items:center; gap:8px;
+}
+.pulse { display:inline-block; width:8px; height:8px; border-radius:50%; background:#ef4444; animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.3;} }
+.breaking .t { font-size:15px; font-weight:700; color:#fca5a5; line-height:1.4; margin-bottom:6px; }
+.breaking .b { font-size:13px; line-height:1.7; color:#cbd5e1; margin-bottom:4px; }
+.breaking .s { font-size:10px; font-weight:600; letter-spacing:.5px; color:#ef4444; text-transform:uppercase; font-family:monospace; }
+nav { display:flex; gap:6px; margin-bottom:24px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; }
+nav::-webkit-scrollbar { display:none; }
+nav button {
+  padding:8px 14px; border-radius:6px; border:none; cursor:pointer;
+  font-size:13px; font-weight:600; white-space:nowrap; flex-shrink:0;
+  background:#1e293b; color:#94a3b8; font-family:inherit; transition:all .15s ease;
+}
+nav button.active { color:#fff; }
+nav button[data-tab="defense"].active { background:#ef4444; }
+nav button[data-tab="us"].active { background:#3b82f6; }
+nav button[data-tab="pacific"].active { background:#14b8a6; }
+nav button[data-tab="europe"].active { background:#6366f1; }
+nav button[data-tab="middleeast"].active { background:#f59e0b; }
+nav button[data-tab="techai"].active { background:#a78bfa; }
+nav button[data-tab="cities"].active { background:#38bdf8; }
+nav button[data-tab="feelgood"].active { background:#facc15; color:#0f172a; }
+.panel { display:none; flex-direction:column; gap:16px; }
+.panel.active { display:flex; }
+.card {
+  background:#1e293b; border:1px solid #334155; border-left:4px solid #94a3b8;
+  border-radius:8px; padding:18px 20px;
+}
+.card h2 { font-size:16px; font-weight:700; margin:0 0 10px; color:#f1f5f9; line-height:1.4; }
+.card p { font-size:14px; line-height:1.7; margin:0 0 12px; color:#cbd5e1; }
+.sowhat { background:#0f172a; border-radius:6px; padding:10px 12px; margin-bottom:12px; font-size:13px; line-height:1.6; color:#e2e8f0; }
+.sowhat b { display:block; font-size:10px; letter-spacing:1.5px; text-transform:uppercase; font-family:monospace; color:#64748b; margin-bottom:4px; }
+.src { font-size:11px; font-weight:600; letter-spacing:.5px; text-transform:uppercase; font-family:monospace; }
+.subhdr {
+  font-size:11px; font-weight:700; letter-spacing:2px; color:#a78bfa; text-transform:uppercase;
+  font-family:monospace; padding-bottom:8px; border-bottom:1px solid #334155;
+}
+.events { background:#1e293b; border:1px solid #334155; border-left:4px solid #38bdf8; border-radius:8px; padding:18px 20px; }
+.events h2 { font-size:14px; font-weight:700; margin:0 0 12px; color:#38bdf8; letter-spacing:1px; text-transform:uppercase; font-family:monospace; }
+.events p { font-size:13px; color:#94a3b8; line-height:1.7; margin:0; }
+.otd { background:#1e293b; border:1px solid #334155; border-left:4px solid #facc15; border-radius:8px; padding:18px 20px; }
+.otd h2 { font-size:14px; font-weight:700; margin:0 0 12px; color:#facc15; letter-spacing:1px; text-transform:uppercase; font-family:monospace; }
+.otd ul { margin:0; padding-left:18px; }
+.otd li { font-size:13px; line-height:1.7; color:#cbd5e1; margin-bottom:8px; }
+.otd li b { color:#f1f5f9; }
+footer { margin-top:28px; text-align:center; color:#475569; font-size:11px; font-family:monospace; letter-spacing:.5px; }
+.d { border-left-color:#ef4444; } .d .src { color:#ef4444; }
+.u { border-left-color:#3b82f6; } .u .src { color:#3b82f6; }
+.p { border-left-color:#14b8a6; } .p .src { color:#14b8a6; }
+.e { border-left-color:#6366f1; } .e .src { color:#6366f1; }
+.m { border-left-color:#f59e0b; } .m .src { color:#f59e0b; }
+.t { border-left-color:#a78bfa; } .t .src { color:#a78bfa; }
+.c { border-left-color:#38bdf8; } .c .src { color:#38bdf8; }
+.f { border-left-color:#facc15; } .f .src { color:#facc15; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="kicker">Daily Digest</div>
+<h1 class="date">Tuesday, July 14, 2026</h1>
+
+<div class="breaking">
+  <div class="hdr"><span class="pulse"></span> Breaking Alerts</div>
+  <div class="t">🔴 Trump reimposes US naval blockade on Iranian ports as strikes enter third night</div>
+  <div class="b">CENTCOM is running a multiday strike wave against Iran while the US reimposes a naval blockade on Iranian trade through the Strait of Hormuz — removing the last major US concession that had held the ceasefire together. Maritime interdiction layered on sustained strikes forces a step-change in force protection, ISR demand, and munitions consumption theater-wide, with immediate second-order effects on Gulf basing access.</div>
+  <div class="s">Washington Post Breaking News · Axios Alerts</div>
+</div>
+
+<nav>
+  <button class="active" data-tab="defense" onclick="showTab('defense',this)">🛡️ Defense</button>
+  <button data-tab="us" onclick="showTab('us',this)">🇺🇸 US</button>
+  <button data-tab="pacific" onclick="showTab('pacific',this)">🌏 Pacific</button>
+  <button data-tab="europe" onclick="showTab('europe',this)">🇪🇺 Europe</button>
+  <button data-tab="middleeast" onclick="showTab('middleeast',this)">🏜️ Middle East</button>
+  <button data-tab="techai" onclick="showTab('techai',this)">💻 Tech &amp; AI</button>
+  <button data-tab="cities" onclick="showTab('cities',this)">🏙️ Cities</button>
+  <button data-tab="feelgood" onclick="showTab('feelgood',this)">🌟 Feel Good</button>
+</nav>
+
+<div id="defense" class="panel active">
+  <div class="card d">
+    <h2>Corsair maritime drones make combat debut against Iranian targets</h2>
+    <p>An unmanned surface vessel has now been used offensively by US forces for the first time: CENTCOM confirmed Corsair USVs struck Iranian assets on July 12. That converts an experimental capability into an operational strike asset inside a contested chokepoint and validates low-cost maritime autonomy as a way to hold targets at risk without exposing manned platforms.</p>
+    <div class="sowhat"><b>So What</b>Assume adversary mirror-imaging — review harbor, pier, and transit-lane force protection against the same class of unmanned surface threat.</div>
+    <span class="src">DefenseScoop via AFA Daily Report</span>
+  </div>
+  <div class="card d">
+    <h2>SDA awards $1.75B for 36 Golden Dome missile-tracking satellites</h2>
+    <p>Golden Dome moves from concept to contract: the Space Development Agency is buying 36 tracking satellites, hardening the sensing layer that homeland and theater missile defense both depend on. The award signals sustained proliferated-LEO investment and will pull funding, billets, and integration work toward the program at the expense of competing modernization lines.</p>
+    <div class="sowhat"><b>So What</b>Missile-warning and space units should anticipate new tasking, manpower pulls, and data-integration requirements as the tracking layer fields.</div>
+    <span class="src">Air &amp; Space Forces Magazine Daily Report</span>
+  </div>
+  <div class="card d">
+    <h2>Pentagon suspends CMMC Phase 2, opens 60-day reform review</h2>
+    <p>Third-party cybersecurity certification for the defense industrial base is off the table for now — DoD suspended CMMC Phase 2, due to start Nov. 10, and kept only Phase 1 self-assessments. Contracting officers get near-term relief in vendor onboarding timelines but inherit real ambiguity about how CUI protection actually gets verified in the interim.</p>
+    <div class="sowhat"><b>So What</b>Acquisition shops should pause Phase 2 clause planning and decide now how they will assure vendor CUI handling without third-party certification.</div>
+    <span class="src">Defense One via AFA Daily Report</span>
+  </div>
+  <div class="card d">
+    <h2>Hegseth stands up DoD–DOJ joint task force to prosecute leakers</h2>
+    <p>Information discipline now carries prosecutorial teeth: SecDef and DOJ have created a joint task force to identify and prosecute leakers of sensitive information. Commanders should expect heightened scrutiny of press engagement, handling of unclassified-but-sensitive material, and internal comms — and should reinforce OPSEC and public-affairs release procedures before an investigation, not after.</p>
+    <div class="sowhat"><b>So What</b>Refresh unit OPSEC and media-engagement guidance this week; the cost of an inadvertent disclosure just went up sharply.</div>
+    <span class="src">The Hill via AFA Daily Report</span>
+  </div>
+  <div class="card d">
+    <h2>Wilsbach: active Airmen need body composition scores on record by July 31</h2>
+    <p>A hard suspense lands on unit leadership: CSAF Gen. Wilsbach's July 13 letter to the force requires every Active-Duty Airman to have a waist-to-height assessment in the official record within two weeks. That is a readiness-reporting and administrative action with a two-week fuse, and squadron and group leadership own both execution and the accountability for gaps.</p>
+    <div class="sowhat"><b>So What</b>Track compliance percentages by squadron this week — not on July 30.</div>
+    <span class="src">Air &amp; Space Forces Magazine Daily Report</span>
+  </div>
+</div>
+
+<div id="us" class="panel">
+  <div class="card u">
+    <h2>Graham's sister appointed to finish his Senate term</h2>
+    <p>The death of Sen. Lindsey Graham — a 33-year USAF veteran and one of the Senate's most influential defense voices — removes a power center on defense authorization and Iran policy mid-conflict. Gov. McMaster appointed Darline Graham Nordone to serve until Jan. 3, 2027, meaning a first-time legislator now holds a seat that carried outsized weight in national security debates.</p>
+    <div class="sowhat"><b>So What</b>Expect weaker Senate advocacy on defense topline and Middle East policy through the current authorization cycle.</div>
+    <span class="src">Axios Alerts · Washington Post</span>
+  </div>
+  <div class="card u">
+    <h2>New vetting process reshapes who gets to be an ambassador</h2>
+    <p>A changed ambassadorial vetting pipeline hits the diplomatic leg of DIME exactly where commanders feel it: access, basing, and overflight all run through country teams. Slower or more politically filtered confirmations mean chargés d'affaires running embassies during an active Middle East escalation, degrading the civ-mil coordination that posture decisions depend on.</p>
+    <div class="sowhat"><b>So What</b>Where your AOR has a vacant chief-of-mission slot, plan for slower host-nation approvals and invest in the DCM relationship now.</div>
+    <span class="src">POLITICO National Security Daily</span>
+  </div>
+  <div class="card u">
+    <h2>Johnson moves to thaw a frozen House floor</h2>
+    <p>Floor paralysis in the House is the pacing item for every defense authorization and appropriation on the calendar. The Speaker's push to restart regular floor business determines whether NDAA and spending vehicles move before the fall — which in turn determines whether programs start the fiscal year under a continuing resolution.</p>
+    <div class="sowhat"><b>So What</b>Keep a CR-start branch plan alive; nothing in the current floor schedule guarantees on-time appropriations.</div>
+    <span class="src">POLITICO Inside Congress</span>
+  </div>
+  <div class="card u">
+    <h2>Trump sons invest heavily in defense tech as federal money floods the sector</h2>
+    <p>A conflict-of-interest storyline is forming around defense-technology procurement: a Post analysis finds funds linked to Donald Trump Jr. and Eric Trump concentrated investments in defense tech since the 2024 election, alongside a surge of federal spending into the same sector. Program offices touching those vendors should anticipate oversight interest, IG inquiries, and press queries.</p>
+    <div class="sowhat"><b>So What</b>If your portfolio touches a named firm, expect FOIA and oversight scrutiny — source-selection documentation discipline matters more than usual.</div>
+    <span class="src">The Washington Post</span>
+  </div>
+</div>
+
+<div id="pacific" class="panel">
+  <div class="card p">
+    <h2>Proposed USMC war reserve stockpile at Bandiana draws Australian scrutiny</h2>
+    <p>Prepositioned stocks are the quiet backbone of any INDOPACOM contingency, and the proposed Marine Corps war reserve site at Bandiana is triggering an Australian debate that matters operationally: the stores may be safe in Victoria, but they still have to get north. Access to a stockpile is worthless without assured lift, rail, and port throughput to northern staging bases.</p>
+    <div class="sowhat"><b>So What</b>Treat Australian internal lines of communication — not the stockpile decision itself — as the binding constraint in Pacific logistics planning.</div>
+    <span class="src">ASPI The Strategist</span>
+  </div>
+  <div class="card p">
+    <h2>Beijing's AI ambitions and Xi's management of Putin</h2>
+    <p>Two signals worth tracking together: Beijing is pressing a state-backed AI build-out while Xi increasingly sets the terms of the Russia relationship rather than following Moscow's lead. That points to China positioning itself as the senior partner in the authoritarian bloc and as an AI competitor with direct military applications — shifting long-range planning assumptions in both the Pacific and European theaters.</p>
+    <div class="sowhat"><b>So What</b>Assume Chinese AI-derived decision advantage is a near-term planning factor, and that Russian escalation is increasingly filtered through Beijing.</div>
+    <span class="src">WSJ China</span>
+  </div>
+  <div class="card p">
+    <h2>Takaichi cabinet holds high approval despite mounting challenges</h2>
+    <p>Alliance continuity in Tokyo looks stable: NHK and JNN polls show only marginal declines — 1 and 5.9 points since March — in support for the Takaichi cabinet. A politically durable Japanese government is the precondition for follow-through on defense spending increases, counterstrike capability, and the basing arrangements US planners are counting on across the first island chain.</p>
+    <div class="sowhat"><b>So What</b>Japanese commitments made this year are more likely to survive to execution — plan bilateral posture initiatives on that assumption.</div>
+    <span class="src">The Japan Times</span>
+  </div>
+</div>
+
+<div id="europe" class="panel">
+  <div class="card e">
+    <h2>Ukrainian deep-strike campaign aims to isolate Crimea logistically</h2>
+    <p>Ukraine is intensifying and expanding strikes designed to deny Russia the ability to sustain logistics and move fuel into occupied Crimea — an attempt at operational isolation of the peninsula. Success would degrade Black Sea Fleet sustainment and southern-axis resupply, and it demonstrates how a deep-strike campaign against fuel and transport nodes can substitute for ground maneuver.</p>
+    <div class="sowhat"><b>So What</b>Crimea is a live case study in logistics-node targeting; run the same vulnerability analysis against your own POL, rail, and port dependencies.</div>
+    <span class="src">ISW Russian Offensive Campaign Assessment</span>
+  </div>
+  <div class="card e">
+    <h2>European capitals go big on deep-strike and combat aircraft purchases</h2>
+    <p>European procurement is shifting from stockpile replenishment toward long-range strike and new aircraft, changing what NATO can hold at risk without US enablers. For EUCOM that means more targeting-coordination and deconfliction demand in the near term — and a slow but real reduction in allied dependence on US ISR and tanking over the longer term.</p>
+    <div class="sowhat"><b>So What</b>Anticipate allied requests for targeting, C2, and interoperability support as these deep-strike buys begin fielding.</div>
+    <span class="src">Breaking Defense: Europe</span>
+  </div>
+</div>
+
+<div id="middleeast" class="panel">
+  <div class="card m">
+    <h2>Trump weighs attack on Iranian nuclear site</h2>
+    <p>Striking a nuclear facility would take the conflict from punitive strikes to a counter-proliferation campaign, with commensurate escalation risk to US forces and partners across CENTCOM. Force protection at dispersed bases, missile-defense allocation, and NEO planning all shift if that decision is made — and the decision window appears to be days, not weeks.</p>
+    <div class="sowhat"><b>So What</b>Review base-defense and dispersal postures now on the assumption of Iranian retaliation against US installations in the Gulf and Levant.</div>
+    <span class="src">The Wall Street Journal</span>
+  </div>
+  <div class="card m">
+    <h2>Trump backtracks on 20% Strait of Hormuz toll demand</h2>
+    <p>The proposed 20% fee on Hormuz transits shocked Gulf partners and is now being walked back — a reminder that coercive economic measures at the chokepoint cut against the same partners whose basing, overflight, and refueling access CENTCOM depends on. The reversal eases near-term alliance friction but leaves Gulf capitals hedging on the durability of US commitments.</p>
+    <div class="sowhat"><b>So What</b>Gulf host-nation goodwill is now a variable, not a constant — build branch plans that assume degraded access if economic coercion returns.</div>
+    <span class="src">Axios Alerts (Barak Ravid)</span>
+  </div>
+  <div class="card m">
+    <h2>US strikes on Iran settle into a sustained multi-night campaign</h2>
+    <p>Sustained multi-night strike operations mean the munitions, tanker, and ISR bill is compounding rather than episodic. Any unit with a Gulf rotation, tanker tasking, or ISR platform in the queue should assume extended tempo and reprioritized allocation away from other theaters — including exercises and INDOPACOM presence missions.</p>
+    <div class="sowhat"><b>So What</b>Expect sourcing pulls: forces earmarked for other AORs are the most likely bill-payers for a sustained CENTCOM campaign.</div>
+    <span class="src">WSJ via AFA Radar Sweep</span>
+  </div>
+</div>
+
+<div id="techai" class="panel">
+  <div class="subhdr">🤖 AI &amp; Competition</div>
+  <div class="card t">
+    <h2>AI gives election conspiracy campaigns a new playbook</h2>
+    <p>Local officials report AI-generated content being used to manufacture election-fraud narratives — an information-warfare technique that scales cheaply and applies just as well to adversary influence operations against military communities and allied populations. The mechanism, not the topic, is what matters: synthetic media plus local credibility is a template any adversary can copy.</p>
+    <div class="sowhat"><b>So What</b>Assume synthetic-media influence ops will eventually target your installation and its surrounding community; pre-build a rapid public-affairs rebuttal channel.</div>
+    <span class="src">POLITICO Digital Future Daily</span>
+  </div>
+  <div class="card t">
+    <h2>Frontier AI capability keeps outrunning institutional adoption</h2>
+    <p>The competitive problem for DoD is no longer model access but absorption: commercially available capability arrives faster than institutions can field or govern it, and that delta is the adversary's opportunity. Group- and division-level leaders can close part of it locally by piloting low-risk internal workflows rather than waiting for enterprise fielding decisions.</p>
+    <div class="sowhat"><b>So What</b>Adoption lag, not technology, is the limiting factor in AI advantage at the operational level.</div>
+    <span class="src">Axios AI+</span>
+  </div>
+  <div class="subhdr">🔒 Cyber &amp; Emerging Tech</div>
+  <div class="card t">
+    <h2>xAI's Grok Build CLI uploads whole code repositories verbatim to the vendor</h2>
+    <p>A widely used AI coding tool transmits the full, unredacted contents of the files it reads — entire repositories — back to xAI. For any organization with sensitive code, contractor IP, or CUI in a repo, that is an exfiltration channel opened by a productivity tool, and it is exactly the class of industrial-base risk the now-suspended CMMC Phase 2 was meant to police.</p>
+    <div class="sowhat"><b>So What</b>Verify whether AI coding assistants are approved on any network touching CUI — the default behavior of these tools is to ship your code offsite.</div>
+    <span class="src">TLDR Information Security</span>
+  </div>
+  <div class="card t">
+    <h2>CrashStealer macOS infostealer impersonates Apple's CrashReporter</h2>
+    <p>Jamf has identified a new macOS infostealer masquerading as the built-in CrashReporter utility — a social-engineering vector aimed at users who instinctively trust native system dialogs. Paired with newly disclosed U-Boot bootloader flaws, it is a reminder that endpoint trust assumptions on non-Windows and embedded devices remain a soft spot in most enterprise defenses.</p>
+    <div class="sowhat"><b>So What</b>macOS and embedded endpoints are not safe by default — confirm EDR coverage and current detection signatures on both.</div>
+    <span class="src">TLDR Information Security</span>
+  </div>
+</div>
+
+<div id="cities" class="panel">
+  <div class="card c">
+    <h2>Ethics complaints hit Nevada's lieutenant governor</h2>
+    <p>Ethics complaints against the sitting lieutenant governor add instability to a state government that Nellis- and Creech-area units rely on for land use, emergency coordination, and community relations. Local political turbulence typically slows state-level decisions on encroachment, water, and infrastructure that directly affect installation planning.</p>
+    <div class="sowhat"><b>So What</b>Expect slower state-level coordination on installation-adjacent issues while the complaints are adjudicated.</div>
+    <span class="src">The Nevadan</span>
+  </div>
+  <div class="events">
+    <h2>🎯 What To Do — Vegas Family Guide</h2>
+    <p>No City Cast Las Vegas edition landed inside the 36-hour window, and the citycast.fm/las-vegas fallback returned no event content. Per the no-fabrication rule, today's curated family events block is omitted rather than invented. It returns with the next City Cast edition.</p>
+  </div>
+</div>
+
+<div id="feelgood" class="panel">
+  <div class="card f">
+    <h2>C-5M Super Galaxy hauls 50 metric tons of narcotics to destruction</h2>
+    <p>Reserve Airmen of the 433rd Airlift Wing, working alongside DEA personnel, executed the largest recorded aerial transport of narcotics for destruction — 23 pallets, roughly 50 metric tons, an estimated $5 billion in street value, moved over three days in Operation Burnout. A quiet demonstration of what strategic airlift and a Reserve wing deliver on a civil mission with no combat headline attached.</p>
+    <div class="sowhat"><b>So What</b>Total Force airlift remains one of the nation's most flexible assets — and much of that capacity lives in the Reserve component.</div>
+    <span class="src">Military Times via AFA "One More Thing"</span>
+  </div>
+  <div class="otd">
+    <h2>📅 On This Day in History</h2>
+    <ul>
+      <li><b>1965</b> — NASA's Mariner 4 completed the first successful close-up flyby of Mars, returning humanity's first images of another planet's surface from deep space.</li>
+      <li><b>1789</b> — Parisians stormed the Bastille, igniting the French Revolution and giving France its national day.</li>
+      <li><b>1881</b> — Sheriff Pat Garrett shot and killed Billy the Kid at Fort Sumner, New Mexico, closing one of the American West's most enduring legends.</li>
+    </ul>
+  </div>
+</div>
+
+<footer>Compiled from Gmail newsletters · rolling 36-hour window · Tuesday, July 14, 2026</footer>
+</div>
+<script>
+function showTab(id, btn) {
+  var panels = document.querySelectorAll('.panel');
+  for (var i = 0; i < panels.length; i++) { panels[i].classList.remove('active'); }
+  var btns = document.querySelectorAll('nav button');
+  for (var j = 0; j < btns.length; j++) { btns[j].classList.remove('active'); }
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
