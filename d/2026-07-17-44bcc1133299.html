@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Digest — Friday, July 17, 2026</title>
+<style>
+:root {
+  color-scheme: light;
+  --defense: #ef4444;
+  --us: #3b82f6;
+  --pacific: #14b8a6;
+  --europe: #6366f1;
+  --me: #f59e0b;
+  --tech: #a78bfa;
+  --cities: #38bdf8;
+  --feelgood: #facc15;
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #1a1d23;
+  --muted: #6b7280;
+  --line: #e3e6ea;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 14px 48px; }
+header {
+  text-align: center;
+  padding: 26px 14px 18px;
+}
+header h1 { font-size: 1.85rem; margin: 0 0 4px; letter-spacing: -0.02em; }
+header .date { color: var(--muted); font-size: 0.95rem; font-weight: 500; }
+
+.breaking {
+  background: #7f1d1d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 0 0 20px;
+}
+.breaking .label {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; margin-bottom: 8px; color: #fecaca;
+}
+.dot {
+  width: 9px; height: 9px; border-radius: 50%; background: #f87171;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .35; transform: scale(1.35); }
+}
+.breaking h2 { margin: 0 0 6px; font-size: 1.06rem; line-height: 1.4; }
+.breaking p { margin: 0; font-size: 0.93rem; color: #fee2e2; }
+.breaking .src { margin-top: 8px; font-size: 0.76rem; color: #fca5a5; }
+
+nav {
+  display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 12px;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+nav::-webkit-scrollbar { display: none; }
+nav button {
+  flex: 0 0 auto; cursor: pointer; white-space: nowrap;
+  background: var(--card); border: 1px solid var(--line); color: var(--muted);
+  border-radius: 999px; padding: 8px 14px; font-size: 0.86rem; font-weight: 600;
+  font-family: inherit;
+}
+nav button.active { background: var(--text); border-color: var(--text); color: #fff; }
+
+.tab { display: none; }
+.tab.active { display: block; }
+
+.sub {
+  font-size: 0.78rem; font-weight: 800; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--muted);
+  margin: 18px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line);
+}
+.sub:first-child { margin-top: 4px; }
+
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-left: 4px solid var(--accent, #999);
+  border-radius: 8px; padding: 15px 16px; margin-bottom: 12px;
+}
+.meta { font-size: 0.75rem; color: var(--muted); font-weight: 600; margin-bottom: 5px; }
+.card h3 { margin: 0 0 8px; font-size: 1.04rem; line-height: 1.38; }
+.card p.body { margin: 0; font-size: 0.93rem; }
+.sowhat {
+  margin-top: 11px; padding: 10px 12px; border-radius: 6px;
+  background: #f3f4f6; border-left: 3px solid var(--accent, #999);
+  font-size: 0.88rem;
+}
+.sowhat b {
+  display: block; font-size: 0.7rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 3px;
+}
+.readmore { display: block; text-align: right; margin-top: 10px; }
+.readmore a {
+  font-size: 0.82rem; font-weight: 600; color: var(--accent, #444); text-decoration: none;
+}
+.readmore a:hover { text-decoration: underline; }
+
+.block {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 8px; padding: 15px 16px; margin-top: 6px;
+}
+.block h3 { margin: 0 0 12px; font-size: 1rem; }
+.block ul { margin: 0; padding-left: 18px; }
+.block li { margin-bottom: 8px; font-size: 0.92rem; }
+.block li:last-child { margin-bottom: 0; }
+
+footer {
+  text-align: center; color: var(--muted); font-size: 0.78rem;
+  margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line);
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>⚡ Daily Digest</h1>
+  <div class="date">Friday, July 17, 2026</div>
+</header>
+
+<div class="breaking">
+  <div class="label"><span class="dot"></span> Breaking</div>
+  <h2>Iran has asked the Houthis to be ready to close the Bab el-Mandeb if the US strikes its power grid</h2>
+  <p>Houthi forces have already moved missiles and drones into position to block shipping at the Red Sea's southern gateway and are awaiting orders from Tehran, a source close to the group told Reuters. IRGC representatives are in Yemen and will make the final call. The trigger is Trump's threat this week to hit Iranian power plants and bridges if Tehran stays away from the table. With the Strait of Hormuz already largely disrupted, closing Bab el-Mandeb would sever the second of two chokepoints — the Red Sea now carries roughly 7 percent of global energy traffic after Gulf shippers rerouted.</p>
+  <div class="src">Politico NatSec Daily, citing Reuters · July 16, 2026</div>
+</div>
+
+<nav>
+  <button class="active" onclick="showTab('defense', this)">🛡️ Defense</button>
+  <button onclick="showTab('us', this)">🇺🇸 US</button>
+  <button onclick="showTab('pacific', this)">🌏 Pacific</button>
+  <button onclick="showTab('europe', this)">🇪🇺 Europe</button>
+  <button onclick="showTab('me', this)">🏜️ Middle East</button>
+  <button onclick="showTab('tech', this)">💻 Tech &amp; AI</button>
+  <button onclick="showTab('feelgood', this)">🌟 Feel Good</button>
+</nav>
+
+<!-- DEFENSE -->
+<section id="defense" class="tab active">
+  <div class="card" style="--accent: var(--defense)">
+    <div class="meta">Defense One · July 17, 2026</div>
+    <h3>Space Force chief nominee: China is moving "breathtakingly fast" on space weapons</h3>
+    <p class="body">Lt. Gen. Douglas Schiess, nominated to be the third Chief of Space Operations, told senators in a smooth confirmation hearing that Chinese counterspace development is his central concern and the core justification for the service's growth in manpower and equipment. Schiess, currently commander of U.S. Space Forces – Space, is expected to be confirmed. The hearing landed the same week GAO reported the service cannot define its own personnel requirements, and as the wider $1.5 trillion defense budget fight intensifies. Schiess used the China threat as the through-line for why the Space Force needs both.</p>
+    <div class="sowhat"><b>So What</b>Space superiority arguments are now the strongest budget currency in the building, and Schiess will own the requirement. Expect counterspace threat assumptions to tighten in your planning guidance — check whether your unit's space-dependent timelines (PNT, SATCOM, missile warning) have a degraded-ops branch plan that survives contact.</div>
+    <div class="readmore"><a href="https://www.defenseone.com/threats/2026/07/china-justifies-space-forces-budget-nominee-tells-lawmakers-smooth-confirmation-hearing/414823">Read full article →</a></div>
+  </div>
+
+  <div class="card" style="--accent: var(--defense)">
+    <div class="meta">Defense One · July 17, 2026</div>
+    <h3>GAO: Space Force can't figure out what people it actually needs</h3>
+    <p class="body">One-quarter of the jobs Space Force leaders say they require went unfilled in fiscal 2025, and the Government Accountability Office found the service lacks a reliable method to track and employ its mix of Guardians, civilians, and contractors. The finding lands while service leaders are asking Congress for more money and more headcount. GAO's point is that the Space Force cannot substantiate the requirement it is asking to be funded. Thousands of "required" billets went empty against a manpower model the watchdog says isn't built to validate itself.</p>
+    <div class="sowhat"><b>So What</b>A service that can't defend its manpower math invites Congress to cut the number rather than fill it. If you rely on Space Force augmentation or reachback, assume the billets behind that support may be notional — verify the actual on-station manning before you build it into a plan.</div>
+    <div class="readmore"><a href="https://www.defenseone.com/threats/2026/07/space-force-cant-figure-out-what-personnel-it-needs-its-missions-gao-says/414814">Read full article →</a></div>
+  </div>
+
+  <div class="card" style="--accent: var(--defense)">
+    <div class="meta">Air &amp; Space Forces Magazine Daily Report · July 17, 2026</div>
+    <h3>Wilsbach: allied airpower generates "effects no nation can generate independently"</h3>
+    <p class="body">Air Force Chief of Staff Gen. Kenneth Wilsbach said July 16 that allied airpower contributions are vital to deterring adversaries, and explicitly endorsed deeper interoperability between the U.S. and its partners. The remarks come as the Air Force argues its budget has been strained by the Iran campaign and as allies at Farnborough press Washington on burden-sharing and predictability. Wilsbach's framing puts coalition capability — not just American mass — at the center of the deterrence argument. It also arrives alongside NATO discussions about a U.S. that will be stretched across simultaneous conflicts.</p>
+    <div class="sowhat"><b>So What</b>The CSAF is signaling that interoperability is a measured output, not a courtesy. Review your unit's combined-ops certifications and coalition data-sharing gaps now — the burden of proof is shifting toward demonstrating you can actually fight integrated, not just exercise it.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--defense)">
+    <div class="meta">Air &amp; Space Forces Magazine Daily Report · July 17, 2026</div>
+    <h3>F-16 pilot awarded Distinguished Flying Cross for dodging Houthi surface-to-air missiles</h3>
+    <p class="body">An Air Force F-16 pilot received one of the service's highest aerial achievement awards for a mission during last year's Operation Rough Rider against Houthi militants in Yemen, in which he evaded multiple surface-to-air missiles. The award is a concrete data point on the SAM threat Houthi forces have fielded against crewed strike aircraft in that theater. It matters now because Iran is reportedly asking those same forces to prepare to close the Bab el-Mandeb. The capability that earned this pilot a DFC is the capability a reopened Red Sea fight would run into.</p>
+    <div class="sowhat"><b>So What</b>Houthi SAM capability is proven against fourth-gen aircraft, not theoretical. If Red Sea contingencies touch your mission set, pressure-test aircrew SAM-evasion currency and threat-reaction training against the Rough Rider profile rather than a generic threat laydown.</div>
+  </div>
+</section>
+
+<!-- US -->
+<section id="us" class="tab">
+  <div class="card" style="--accent: var(--us)">
+    <div class="meta">Breaking Defense · July 17, 2026</div>
+    <h3>Air Force chief pushes for all three spending vehicles as the $1.5T budget wobbles</h3>
+    <p class="body">The Iran war has drained munitions stockpiles and strained the Air Force budget, and the service's top officer told Breaking Defense the military needs "all three" administration proposals to hold its edge: a $1.1 trillion base budget, a $350 billion reconciliation boost, and a multibillion-dollar supplemental. Meanwhile House Republicans are racing to pass a $60 billion bill to backfill the hole the Middle East campaign punched in the Pentagon's balance sheet, using reconciliation to bypass Senate Democrats. Politico reports that approach could kill the $1.5 trillion topline it was meant to protect. The interceptor and munitions drawdown is the forcing function behind both moves.</p>
+    <div class="sowhat"><b>So What</b>Munitions expenditure in CENTCOM is now setting the terms of the entire FY budget fight, and the topline is not safe. Expect procurement timelines and readiness accounts to move late — flag any program milestone in your portfolio that assumes the $1.5T number holds.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--us)">
+    <div class="meta">Politico NatSec Daily · July 16, 2026</div>
+    <h3>White House elevates "left-wing terrorism" to ISIS-level priority, promises new FTO designations</h3>
+    <p class="body">Secretary of State Marco Rubio and White House deputy chief of staff Stephen Miller told a State Department ministerial that radical leftism is the greatest threat facing Western countries, with Rubio calling it a "blind spot" in post-9/11 counterterrorism. State has already designated a number of groups it describes as violent far-left organizations as foreign terrorist organizations and plans more designations soon. Rubio convened the summit to bring allied governments into the effort. Researchers note left-wing terrorism has not reached the historical levels or global reach of other forms of political violence.</p>
+    <div class="sowhat"><b>So What</b>An FTO designation wave redirects intelligence collection, force protection posture, and installation threat assessments toward a domestic-adjacent target set. Expect tasking pressure on your intel and FP staffs, and get legal in early — the line between protected activity and designated-entity nexus is where the risk sits.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--us)">
+    <div class="meta">Politico NatSec Daily · July 16, 2026</div>
+    <h3>Senate Republicans move to define every Chinese company as an arm of the state</h3>
+    <p class="body">The Stop PRC Economic Espionage Act, backed by Sens. John Cornyn and Tom Cotton with Rep. John Moolenaar, would establish in law that all Chinese businesses are an arm of the state — meaning any illicit acquisition of American IP or trade secrets by them automatically constitutes espionage. Current law requires prosecutors to prove the company acted with intent or knowledge that a foreign entity would benefit, a burden the sponsors call unnecessary given CCP control over nominally private firms. The bill was filed in the Senate July 16; the House version comes next week. It is unclear whether it has the votes in either chamber.</p>
+    <div class="sowhat"><b>So What</b>If enacted, this lowers the prosecution bar and will widen the aperture on contractor and supply-chain scrutiny well beyond current CFIUS-style reviews. Audit your program's vendor tree for PRC-linked subs now — the definition of "espionage" is about to expand around them.</div>
+  </div>
+</section>
+
+<!-- PACIFIC -->
+<section id="pacific" class="tab">
+  <div class="card" style="--accent: var(--pacific)">
+    <div class="meta">Defense One · July 17, 2026</div>
+    <h3>RIMPAC is testing whether drones and 3D printers can beat the Pacific's tyranny of distance</h3>
+    <p class="body">This year's RIMPAC is running experiments on additive manufacturing and uncrewed delivery to solve the sustainment problem that defines any INDOPACOM fight: parts and supplies that must cross thousands of miles of ocean to reach dispersed forces. "This is Uber for manufacturing delivered at the speed of Amazon, for the highest quality of parts," Marine Lt. Col. Michael Radigan told reporters. The concept is to print or fly what you need forward rather than push it through a contested, single-threaded logistics chain. Distance, not firepower, is the binding constraint the exercise is attacking.</p>
+    <div class="sowhat"><b>So What</b>Contested logistics is being treated as the decisive problem in the Pacific, and the fix being tested is organic production forward rather than resupply from the rear. Look hard at your unit's parts-demand tail — which class IX items would you print if the sea lane closed, and do you have the technical data rights to do it?</div>
+    <div class="readmore"><a href="https://www.defenseone.com/technology/2026/07/can-new-drones-3d-printers-defeat-distances-tyranny-rimpac-aims-find-out/414825">Read full article →</a></div>
+  </div>
+
+  <div class="card" style="--accent: var(--pacific)">
+    <div class="meta">ASPI The Strategist · July 17, 2026</div>
+    <h3>Japan's intelligence restructure opens room for deeper Australian cooperation</h3>
+    <p class="body">Tokyo is reorganizing its intelligence capability around new central agencies, a change ASPI argues Australia should actively welcome because it creates a cleaner counterpart structure for sharing. The direction was set out in a joint statement during Japanese Prime Minister Sanae Takaichi's visit to Australia in May. The practical effect is a Japanese system that can receive, protect, and act on partner intelligence at a level closer to Five Eyes norms. That reshapes what the northern half of the INDOPACOM partner network can be trusted with.</p>
+    <div class="sowhat"><b>So What</b>A restructured Japanese intelligence enterprise changes the realistic ceiling on trilateral US–Japan–Australia sharing, and that ceiling drives combined planning assumptions. If your staff writes releasability caveats for Pacific products, expect the guidance to move — ask now rather than defaulting to NOFORN.</div>
+    <div class="readmore"><a href="https://www.aspistrategist.org.au/australia-should-welcome-japans-intelligence-restructure/">Read full article →</a></div>
+  </div>
+
+  <div class="card" style="--accent: var(--pacific)">
+    <div class="meta">ASPI The Strategist · July 17, 2026</div>
+    <h3>Australia named AI a national priority — but its sovereign capability plan is still blank</h3>
+    <p class="body">Prime Minister Anthony Albanese's first major AI speech this week elevated artificial intelligence to a national priority and declared the government's intent to hold sovereign capability, but ASPI's David Wroe argues the plan behind that declaration is unclear. The gap matters because sovereign AI capability is the difference between an ally that can independently build and assure military-relevant models and one that rents them. Canberra is making the declaration late relative to its partners. What "sovereign" actually buys — compute, models, data, or just policy control — remains undefined.</p>
+    <div class="sowhat"><b>So What</b>An ally without sovereign AI capability is an ally whose AI-enabled contributions depend on someone else's stack, which is a combined-planning dependency, not just an industrial one. When AUKUS Pillar 2 AI lines of effort reach your staff, ask what Australia can actually field independently versus what it needs from us.</div>
+    <div class="readmore"><a href="https://www.aspistrategist.org.au/as-australia-prepares-for-the-ai-future-its-plan-for-sovereign-capability-is-unclear/">Read full article →</a></div>
+  </div>
+</section>
+
+<!-- EUROPE -->
+<section id="europe" class="tab">
+  <div class="card" style="--accent: var(--europe)">
+    <div class="meta">Politico NatSec Daily · July 16, 2026</div>
+    <h3>German troops will join France's nuclear exercise Poker for the first time this fall</h3>
+    <p class="body">German military personnel will participate in France's flagship nuclear drill, Poker, this autumn — a first, and a substantive step toward Franco-German nuclear deterrence cooperation rather than a declaratory one. Chancellor Friedrich Merz and President Emmanuel Macron are expected to settle details at the Franco-German Defense and Security Council at Germany's Nörvenich Air Base. The move follows Macron's March speech announcing several European states had agreed to deepen nuclear deterrence cooperation. It is driven by European doubt about the reliability of the American security guarantee.</p>
+    <div class="sowhat"><b>So What</b>Europeans are building a nuclear deterrence track that does not route through Washington, and participation — not rhetoric — is the measure of it. For EUCOM-facing staffs, this changes the assumed escalation architecture: French and German planning may not sync to NATO nuclear timelines you currently brief.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--europe)">
+    <div class="meta">Defense One · July 17, 2026</div>
+    <h3>Zelenskyy fired his defense minister and set off protests at home and alarm among allies</h3>
+    <p class="body">Zelenskyy removed 35-year-old Mykhailo Fedorov — credited by many analysts with Ukraine's recent battlefield gains and, per Defense One's sources, the clearest thinking on how to win the war — citing an unworkable relationship with Army Commander Gen. Oleksandr Syrskyi. "They even refused to sit at the same table without me. I had to make a choice," Zelenskyy said. Spy chief Yevhenii Khmara becomes acting defense minister. The dismissal triggered street protests and open criticism from allied governments, with one NATO diplomat calling the move unwise. It lands alongside a broad Cabinet reshuffle that also installed a new prime minister, former Naftogaz CEO Serhiy Koretsky.</p>
+    <div class="sowhat"><b>So What</b>Ukraine just removed the official most associated with its drone-centric theory of victory, mid-war, over a personality conflict with its army commander. Expect friction and delay in any bilateral line of effort running through the Ukrainian MOD — reconfirm your counterpart before assuming continuity of agreements.</div>
+    <div class="readmore"><a href="https://www.defenseone.com/policy/2026/07/ukraine-defense-minister-firing-protests/414836">Read full article →</a></div>
+  </div>
+
+  <div class="card" style="--accent: var(--europe)">
+    <div class="meta">ISW Russian Offensive Campaign Assessment · July 16, 2026</div>
+    <h3>Ukrainian drones have paralyzed Russian fuel shipping across the Azov and are isolating Crimea</h3>
+    <p class="body">Ukrainian Unmanned Systems Forces operations have halted Russian fuel shipping in the Azov Sea and now threaten the Novorossiysk–Bosphorus and Don–Bosphorus sea lines of communication, per Ukrainian Navy spokesperson Capt. 2nd Rank Dmytro Pletenchuk. The Azov–Black Sea region carries up to 20 percent of Russian crude exports, and Novorossiysk is Russia's largest seaport. Russia turned to these sea routes after Ukraine interdicted the ground lines connecting Crimea to Rostov Oblast, and has not bolstered air defenses along them despite three years of warning; escorting cargo with warships would only expose the warships. ISW assesses the strikes are degrading aviation fuel supply to Crimean airfields and stretching already-thin Russian air defense across a widening area.</p>
+    <div class="sowhat"><b>So What</b>Cheap uncrewed systems are imposing a theater-wide air defense allocation problem on a peer adversary and closing a sea line of communication without a navy. That is the template an adversary will read back to us — reassess whether your own SLOC and fuel-node protection assumptions survive a comparable low-cost maritime drone campaign.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--europe)">
+    <div class="meta">Defense One · July 17, 2026</div>
+    <h3>Ukraine will build 5 million drones this year, and NATO's deputy air commander says the alliance must learn how</h3>
+    <p class="body">Ukraine is on track to produce more than 5 million drones in 2026, and Air Chief Marshal Johnny Stringer says NATO has to absorb both that industrial lesson and hard lessons from the U.S. war on Iran. The number is the point: it represents a production model built on commercial supply chains and rapid iteration that no NATO member currently replicates. Stringer's framing treats Ukrainian industrial practice as something the alliance should copy rather than merely fund. The Iran campaign's munitions drawdown is the counterexample sitting next to it.</p>
+    <div class="sowhat"><b>So What</b>The alliance's munitions problem is a production-rate problem, and Ukraine has demonstrated the rate is achievable outside the traditional primes. Where your requirements process still assumes multi-year procurement for attritable systems, that assumption is now the constraint — not the technology.</div>
+    <div class="readmore"><a href="https://www.defenseone.com/threats/2026/07/ukraine-will-build-more-5-million-drones-year-nato-must-take-notes-deputy-chief-says/414819">Read full article →</a></div>
+  </div>
+</section>
+
+<!-- MIDDLE EAST -->
+<section id="me" class="tab">
+  <div class="card" style="--accent: var(--me)">
+    <div class="meta">The Associated Press, via AFA Daily Report · July 17, 2026</div>
+    <h3>US–Iran fighting intensifies over the Strait of Hormuz, but diplomacy isn't dead</h3>
+    <p class="body">Combat between U.S. and Iranian forces has escalated around control of the Strait of Hormuz even as channels for a negotiated outcome show what AP calls stubborn signs of life. U.S. strikes on Iran have now run six days. Trump has threatened to hit Iranian power plants and bridges next week absent talks, while Tehran released a wrongly detained U.S. citizen, Dena Karari, in what Trump characterized as a goodwill gesture Iran has not publicly confirmed. Roughly 20 percent of global oil transited Hormuz before the war; that flow is now largely disrupted.</p>
+    <div class="sowhat"><b>So What</b>Escalation and negotiation are running simultaneously, which means force posture has to support both a strike option and a rapid off-ramp. Do not let planning collapse to one branch — verify your unit's Hormuz-contingency timelines still hold if the political decision reverses inside 72 hours.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--me)">
+    <div class="meta">The Wall Street Journal, via AFA Daily Report · July 17, 2026</div>
+    <h3>Trump has threatened to bomb Pickaxe Mountain. What's inside is the question.</h3>
+    <p class="body">Pickaxe Mountain is a subterranean complex under construction near one of Iran's main nuclear installations, and it is now explicitly in the target set as Trump escalates his rhetoric. The site's depth and purpose are the crux: a hardened, deeply buried facility adjacent to a declared nuclear site raises both the munitions question and the intelligence-confidence question. Striking it would require the heaviest penetrators in the inventory against a target whose contents are not publicly established. That combination — high-end munitions expenditure against uncertain contents — is the decision on the table.</p>
+    <div class="sowhat"><b>So What</b>Deeply buried targets consume the scarcest munitions in the stockpile, the same stockpile already driving a $60 billion emergency backfill. If your portfolio touches hard-target munitions or the ISR feeding that targeting problem, expect demand and scrutiny to spike together.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--me)">
+    <div class="meta">WSJ What's News · July 16, 2026</div>
+    <h3>Chevron is signing Iraqi oilfield deals and exploring a pipeline to the Syrian coast to bypass Hormuz</h3>
+    <p class="body">Chevron intends to sign preliminary deals to invest in two Iraqi oil fields and will join an investor consortium exploring a pipeline connecting Iraq's oil patch to the Syrian coast — a route that avoids the Strait of Hormuz entirely. Gulf governments are pouring billions into new pipelines, rail corridors, and energy storage hubs for the same reason, and WSJ assesses this bypass buildout is set to become one of the war's most durable outcomes. About 20 percent of the world's oil moved through Hormuz before the war began. The infrastructure being laid now will outlast the shooting.</p>
+    <div class="sowhat"><b>So What</b>Every barrel that routes around Hormuz permanently devalues the chokepoint Iran uses as leverage — and shifts the map of what needs protecting toward Iraqi and Syrian ground infrastructure. Long-term CENTCOM posture questions will follow the pipe, so watch which new fixed sites become implicit US security commitments.</div>
+    <div class="readmore"><a href="https://www.wsj.com/world/middle-east/chevron-will-explore-creating-strait-of-hormuz-alternative-for-iraqi-oil-36308abf">Read full article →</a></div>
+  </div>
+</section>
+
+<!-- TECH & AI -->
+<section id="tech" class="tab">
+  <div class="sub">🤖 AI &amp; Competition</div>
+  <div class="card" style="--accent: var(--tech)">
+    <div class="meta">Politico NatSec Daily, citing the Financial Times · July 16, 2026</div>
+    <h3>Moonshot's Kimi K3 lands as China's largest model yet — and the gap keeps narrowing</h3>
+    <p class="body">Beijing-based Moonshot has released Kimi K3, China's largest AI model to date at roughly 2.8 trillion parameters with a one-million-token context window and multimodal reasoning. Sources told the FT it is expected to beat Anthropic's Opus 4.8 while falling short of Fable. The strategic pattern underneath the benchmark is the pricing: American labs have raised prices on closed models while Chinese labs including Moonshot ship cheaper open-weight alternatives, which is how a trailing competitor buys global adoption. A growing number of U.S. industry experts now assess China is closing the frontier gap.</p>
+    <div class="sowhat"><b>So What</b>Open-weight Chinese frontier models mean adversary-adjacent AI capability propagates to any actor with compute, regardless of export controls on chips. Assume capable models are available to your threat actors, and press for AI-enabled threat assumptions in your next intel estimate rather than treating frontier AI as a US-only advantage.</div>
+  </div>
+
+  <div class="sub">🔒 Cyber &amp; Emerging Tech</div>
+  <div class="card" style="--accent: var(--tech)">
+    <div class="meta">TLDR Cybersecurity · July 16, 2026</div>
+    <h3>ESET found 11 unrevoked UEFI shims — some from 2013 — that let attackers bypass Secure Boot</h3>
+    <p class="body">Researchers at ESET identified 11 old UEFI shims, several dating back to 2013, that Microsoft never revoked, leaving a working path to bypass Secure Boot on affected systems. Because the shims are signed and trusted, the bypass defeats the boot-integrity control that most endpoint security models assume is intact underneath them. Anything installed below the operating system survives reimaging and is invisible to standard endpoint tooling. The exposure window is the full 13 years these shims have been trusted.</p>
+    <div class="sowhat"><b>So What</b>Boot-level trust is the assumption your entire endpoint security stack rests on, and it has been quietly false on some hardware for years. Have your cyber staff confirm the revocation status of shims across your fielded platforms — reimaging is not a remediation for this class of compromise.</div>
+  </div>
+
+  <div class="card" style="--accent: var(--tech)">
+    <div class="meta">Breaking Defense, via AFA Daily Report · July 17, 2026</div>
+    <h3>CMMC audits are paused, but industry expects the review regime to come back</h3>
+    <p class="body">Third-party cybersecurity audits under the Pentagon's contractor certification program are on pause, but industry officials and outside experts say DoD will have to return to some form of review regime to ensure there are no unlocked virtual doors for adversary hackers. The pause does not change the threat model — it changes who is checking. Contractors that treated CMMC as a compliance deadline rather than a security floor are the exposure. The expectation across industry is that the requirement returns in some form rather than disappearing.</p>
+    <div class="sowhat"><b>So What</b>A compliance pause reliably produces a security drift that only surfaces when the regime returns — or when an adversary finds it first. If you own contracts touching CUI, treat the current window as an opportunity to verify your vendors' actual posture rather than their certification status.</div>
+  </div>
+</section>
+
+<!-- FEEL GOOD -->
+<section id="feelgood" class="tab">
+  <div class="card" style="--accent: var(--feelgood)">
+    <div class="meta">War on the Rocks, via AFA Daily Report · July 17, 2026</div>
+    <h3>The self-taught engineer whose wing carried the B-24 — and 18,482 bombers with it</h3>
+    <p class="body">The most-produced American military aircraft of World War II was not a fighter or a trainer but the B-24 Liberator, a complex four-engine heavy bomber that American industry turned out 18,482 times in five years and flew in every theater of the war. What made it possible was its wing — the Davis wing, the product of a self-made engineer's bet on an airfoil design the establishment had no particular reason to trust. Without it the Liberator would not have had its range and load, and might never have existed at all. It's a reminder that the workhorse of a war can hinge on one person's conviction about a curve.</p>
+  </div>
+
+  <div class="block">
+    <h3>📅 On This Day in History</h3>
+    <ul>
+      <li><strong>1944</strong> — The Port Chicago disaster: an ammunition explosion at the California naval magazine killed 320 sailors and civilians, most of them Black ammunition loaders, and the mutiny trial that followed helped force the Navy toward desegregation.</li>
+      <li><strong>1975</strong> — Apollo and Soyuz docked in orbit, the first international crewed spaceflight linkup, with American and Soviet crews shaking hands 140 miles above the Earth at the height of the Cold War.</li>
+      <li><strong>1955</strong> — Disneyland opened in Anaheim, California, on a chaotic press day so beset by heat, counterfeit tickets, and wet asphalt that insiders called it "Black Sunday."</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Compiled from 9 newsletter sources · 36-hour window closing July 17, 2026, 14:23 UTC
+</footer>
+
+</div>
+
+<script>
+function showTab(id, btn) {
+  var tabs = document.querySelectorAll('.tab');
+  for (var i = 0; i < tabs.length; i++) { tabs[i].classList.remove('active'); }
+  var btns = document.querySelectorAll('nav button');
+  for (var j = 0; j < btns.length; j++) { btns[j].classList.remove('active'); }
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
