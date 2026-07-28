@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>⚡ Daily Digest — Tuesday, July 28, 2026</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f4f5f7;
+  color: #1a1d21;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 14px 60px; }
+header.masthead {
+  text-align: center;
+  padding: 26px 14px 16px;
+}
+header.masthead h1 { margin: 0; font-size: 30px; letter-spacing: -0.5px; }
+header.masthead .date { margin-top: 4px; font-size: 15px; color: #5a6069; font-weight: 600; }
+header.masthead .tagline { margin-top: 6px; font-size: 12px; color: #8a9099; text-transform: uppercase; letter-spacing: 1px; }
+
+.breaking {
+  background: #7f1010;
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 6px 0 18px;
+  box-shadow: 0 2px 10px rgba(127,16,16,0.25);
+}
+.breaking .bhead { display: flex; align-items: center; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; }
+.dot {
+  width: 11px; height: 11px; border-radius: 50%; background: #ff4d4d; margin-right: 9px;
+  animation: pulse 1.3s infinite; box-shadow: 0 0 0 0 rgba(255,77,77,0.7);
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,77,77,0.7); }
+  70% { box-shadow: 0 0 0 9px rgba(255,77,77,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,77,77,0); }
+}
+.breaking h2 { margin: 8px 0 5px; font-size: 18px; }
+.breaking p { margin: 0; font-size: 14.5px; color: #f3dede; }
+.breaking .meta { font-size: 12px; color: #e6b3b3; margin-top: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+.tabbar {
+  display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 12px;
+  -webkit-overflow-scrolling: touch; scrollbar-width: thin;
+}
+.tabbar button {
+  flex: 0 0 auto; border: 1px solid #d7dbe0; background: #fff; color: #3a3f47;
+  padding: 8px 14px; border-radius: 20px; font-size: 14px; font-weight: 600; cursor: pointer;
+  white-space: nowrap; transition: all 0.15s;
+}
+.tabbar button:hover { background: #eef0f3; }
+.tabbar button.active { color: #fff; border-color: transparent; }
+
+.panel { display: none; }
+.panel.active { display: block; }
+.subhead { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #5a6069; margin: 18px 2px 8px; }
+
+.card {
+  background: #fff; border-radius: 10px; padding: 15px 16px 14px; margin-bottom: 14px;
+  border-left: 5px solid #999; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.card .meta { font-size: 12px; color: #7a808a; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.card h3 { margin: 5px 0 8px; font-size: 18px; line-height: 1.3; }
+.card p { margin: 0 0 10px; font-size: 15px; color: #2b2f36; }
+.sowhat {
+  background: #f2f4f7; border-radius: 8px; padding: 10px 12px; font-size: 14px; color: #33383f;
+}
+.sowhat b { text-transform: uppercase; font-size: 11px; letter-spacing: 1px; color: #5a6069; display: block; margin-bottom: 3px; }
+.readlink { text-align: right; margin-top: 10px; }
+.readlink a { font-size: 13px; font-weight: 700; text-decoration: none; }
+
+.eventblock, .otd {
+  background: #fff; border-radius: 10px; padding: 15px 16px; margin: 14px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.eventblock h3, .otd h3 { margin: 0 0 12px; font-size: 17px; }
+.event { padding: 10px 0; border-bottom: 1px solid #eef0f3; }
+.event:last-child { border-bottom: none; }
+.event .name { font-weight: 700; font-size: 15px; }
+.event .venue { font-size: 12.5px; color: #7a808a; font-weight: 600; margin: 1px 0 4px; }
+.event .desc { font-size: 14px; margin: 0 0 4px; }
+.event .tip { font-size: 13px; color: #2f6b3a; background: #eef7f0; border-radius: 6px; padding: 6px 9px; }
+.otd ul { margin: 0; padding-left: 18px; }
+.otd li { font-size: 14.5px; margin-bottom: 7px; }
+.otd li b { font-variant-numeric: tabular-nums; }
+footer { text-align: center; font-size: 12px; color: #9aa0a8; padding: 20px 10px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <h1>⚡ Daily Digest</h1>
+    <div class="date">Tuesday, July 28, 2026</div>
+    <div class="tagline">Operational Brief · DIME Lens</div>
+  </header>
+
+  <div class="breaking">
+    <div class="bhead"><span class="dot"></span>Breaking</div>
+    <h2>Iran-backed drones strike Saudi oil sites; Gulf air defenses engage as Bab el-Mandeb traffic collapses</h2>
+    <p>Saudi Arabia said it shot down Iranian-aligned militia drones launched from Iraq that targeted petroleum facilities near Riyadh, while Iran-backed Houthis claimed additional strikes on Saudi oil infrastructure. Jordan downed two drones and Iraq reported attacks in its north. Commodity traffic through the Bab el-Mandeb Strait fell to roughly 11 vessels Sunday — among the lowest on record — after the Houthis declared a naval blockade against Saudi Arabia. The exchange runs in parallel with active US–Iran ceasefire diplomacy over the Strait of Hormuz.</p>
+    <div class="meta">Politico NatSec Daily · Jul 27</div>
+  </div>
+
+  <div class="tabbar" id="tabbar">
+    <button data-tab="defense" class="active">🛡️ Defense</button>
+    <button data-tab="us">🇺🇸 US</button>
+    <button data-tab="pacific">🌏 Pacific</button>
+    <button data-tab="europe">🇪🇺 Europe</button>
+    <button data-tab="me">🏜️ Middle East</button>
+    <button data-tab="tech">💻 Tech &amp; AI</button>
+    <button data-tab="cities">🏙️ Cities</button>
+    <button data-tab="feel">🌟 Feel Good</button>
+  </div>
+
+  <!-- DEFENSE -->
+  <div class="panel active" id="defense">
+    <div class="card" style="border-left-color:#ef4444">
+      <div class="meta">Defense News (via AFA Daily Report) · Jul 27</div>
+      <h3>Pentagon seeks cheap, mass-producible long-range strike weapons — with test rounds in three months</h3>
+      <p>Running low on expensive precision-guided munitions, DoD has issued a call for Ground-Based Affordable Mass (GBAM) weapons: long-range, autonomously guided munitions priced under $250,000 apiece. The compressed timeline pushes for testable prototypes within roughly three months, signaling an attempt to rebuild deep-magazine strike capacity fast enough to matter in a protracted fight. It lands alongside a separate framework deal with L3Harris to scale solid-rocket-motor output for PAC-3 and THAAD interceptors over seven years.</p>
+      <div class="sowhat"><b>So What</b>Magazine depth, not platform count, is now the binding constraint on sustained strike operations. Expect fielding pressure and doctrine questions about integrating attritable mass munitions into existing fires plans — brief your fires and sustainment cells to track GBAM requirements early.</div>
+    </div>
+    <div class="card" style="border-left-color:#ef4444">
+      <div class="meta">National Defense Magazine (via AFA Daily Report) · Jul 27</div>
+      <h3>Air Force undersecretary: force is 'older, smaller, and less ready than it needs to be'</h3>
+      <p>Undersecretary Matthew Lohmeier delivered a blunt readiness assessment July 27, saying the service is not postured to both defend the homeland and deter aggression in the Pacific. The framing ties fleet age and fleet size directly to the two-theater demand signal — echoing a congressional warning the same week that America's fighter force is "running out of margin" across Europe, the Middle East, the homeland, and the INDOPACOM fight.</p>
+      <div class="sowhat"><b>So What</b>Senior leadership is publicly setting conditions for hard force-structure and prioritization tradeoffs. Assume readiness reporting and aircraft-availability metrics will get sharper scrutiny — validate your unit's true mission-capable rates before they are questioned from above.</div>
+    </div>
+    <div class="card" style="border-left-color:#ef4444">
+      <div class="meta">Washington Post · Jul 27</div>
+      <h3>DEA and Pentagon assessment: deadly boat strikes have not cut cocaine flow into the US</h3>
+      <p>A previously unreported DEA assessment, a closed-door congressional briefing, and interviews with current and former officials indicate the US military strikes on alleged drug-trafficking vessels off Central and South America have not reduced maritime cocaine flow. Instead, the campaign is prompting trafficking organizations to adapt tactics and is undercutting traditional investigative methods — directly contradicting the administration's claim that sea trafficking has "nearly ended."</p>
+      <div class="sowhat"><b>So What</b>A kinetic SOUTHCOM campaign is being judged ineffective against its stated objective while generating legal and second-order effects. Commanders in the interdiction chain should expect oversight scrutiny and be ready to defend targeting standards and measures of effectiveness.</div>
+    </div>
+    <div class="card" style="border-left-color:#ef4444">
+      <div class="meta">Defense One / AFA Daily Report · Jul 27</div>
+      <h3>Second B-52 fitted with new AESA radar after fatal June test crash; work due by year's end</h3>
+      <p>A second B-52H is now being modified with the upgraded active electronically scanned array radar under the Radar Modernization Program, after the first test aircraft crashed in June. Officials said July 27 the modification should finish by the end of the year and the test schedule will be adjusted "as necessary." The RMP is central to keeping the bomber viable for decades of all-weather navigation and targeting.</p>
+      <div class="sowhat"><b>So What</b>A single mishap can bottleneck an entire modernization line when the test fleet is thin. Track schedule slip risk to B-52 upgrade timelines and the downstream effect on long-range strike availability planning.</div>
+    </div>
+    <div class="card" style="border-left-color:#ef4444">
+      <div class="meta">Breaking Defense / AFA Daily Report · Jul 27</div>
+      <h3>Pentagon inks seven-year framework with L3Harris to ramp interceptor rocket-motor output</h3>
+      <p>The department announced a framework agreement July 27 to scale L3Harris solid-rocket-motor production for PAC-3 and THAAD interceptors over the next seven years, though final contracts are not yet signed. The move targets a known industrial-base chokepoint as air-and-missile-defense demand surges across CENTCOM, EUCOM, and INDOPACOM simultaneously.</p>
+      <div class="sowhat"><b>So What</b>Interceptor throughput — not launcher count — increasingly gates layered air defense. Air-defense and logistics planners should factor multi-year motor supply ramps into readiness projections rather than assuming on-demand replenishment.</div>
+    </div>
+  </div>
+
+  <!-- US -->
+  <div class="panel" id="us">
+    <div class="card" style="border-left-color:#3b82f6">
+      <div class="meta">WSJ Politics / Politico · Jul 27–28</div>
+      <h3>Senate to advance Graham Russia sanctions bill as sweeping package moves post-funeral</h3>
+      <p>The Senate is set to take up the Lindsey O. Graham Sanctioning Russia Act of 2026, the massive sanctions package the late senator championed before his death, with a procedural vote expected this week. Momentum coincides with President Zelenskyy's Washington visit and a co-production deal to build Patriots in Ukraine. Passage would hand the executive expanded economic-pressure authorities against Moscow and its enablers.</p>
+      <div class="sowhat"><b>So What</b>New statutory sanctions authority reshapes the economic instrument in the Ukraine fight and can ripple into third-country entities and supply chains. Watch for compliance and targeting implications if the bill clears procedural hurdles.</div>
+    </div>
+    <div class="card" style="border-left-color:#3b82f6">
+      <div class="meta">WSJ Politics · Jul 28</div>
+      <h3>Senate to hold final vote on Jay Clayton for Director of National Intelligence</h3>
+      <p>A final confirmation vote for Jay Clayton as DNI is on the Senate calendar, filling the top post overseeing the intelligence community. The timing coincides with active US–Iran diplomacy and a contested Ukraine picture, placing a new principal atop threat integration and warning at a volatile moment.</p>
+      <div class="sowhat"><b>So What</b>A change at the top of the IC can shift collection priorities and the tenor of national-level assessments. Expect potential adjustments to intelligence guidance — flag PIR alignment for review once the seat is filled.</div>
+    </div>
+    <div class="card" style="border-left-color:#3b82f6">
+      <div class="meta">Breaking Defense · Jul 27</div>
+      <h3>Industry weighs continuing-resolution plans as defense-funding uncertainty builds</h3>
+      <p>With a continuing resolution working through Congress, industry leaders including AIA's Eric Fanning laid out the risks a stopgap poses to program starts, production ramps, and multiyear buys. A CR freezes new-start authority and holds spending at prior-year levels — a particular problem as the Pentagon pushes urgent munitions and interceptor scale-up efforts.</p>
+      <div class="sowhat"><b>So What</b>A CR would directly slow the very munitions and air-defense ramps commanders are counting on. Build schedule risk from delayed FY authority into acquisition-dependent readiness plans now.</div>
+    </div>
+  </div>
+
+  <!-- PACIFIC -->
+  <div class="panel" id="pacific">
+    <div class="card" style="border-left-color:#14b8a6">
+      <div class="meta">AFA Daily Report · Jul 27</div>
+      <h3>REFORPAC to expand in 2027, adding sister services and more allies to the Pacific mega-exercise</h3>
+      <p>The Air Force will fold joint forces and additional allied participants into the next Resolute Force Pacific exercise in spring 2027, a top general said July 27, scaling up from the inaugural iteration. REFORPAC is the service's marquee agile-combat-employment and distributed-basing rehearsal for a Pacific fight, so a larger, more joint-and-combined edition signals maturing theater warfighting concepts.</p>
+      <div class="sowhat"><b>So What</b>The exercise is the clearest window into how INDOPACOM intends to fight distributed and combined. Units with a plausible Pacific role should begin shaping ACE, logistics, and interoperability readiness against a 2027 participation timeline.</div>
+    </div>
+    <div class="card" style="border-left-color:#14b8a6">
+      <div class="meta">The War Zone (via AFA Daily Report) · Jul 27</div>
+      <h3>US pilots could command Australian MQ-28 Ghost Bat drones as USAF–RAAF integration deepens</h3>
+      <p>The USAF is "threaded in tight" with Australia's MQ-28 Ghost Bat work, its top Pacific officer said, with the uncrewed aircraft's participation in a major exercise this year feeding directly into US Collaborative Combat Aircraft plans. The depth of integration opens the door to American personnel eventually directing Australian MQ-28s — a concrete step toward combined crewed-uncrewed teaming across the alliance.</p>
+      <div class="sowhat"><b>So What</b>Allied CCA interoperability is moving from concept to command-relationship questions. Watch for doctrine, data-sharing, and authorities work needed before US aircrews can task allied autonomous platforms in combat.</div>
+    </div>
+    <div class="card" style="border-left-color:#14b8a6">
+      <div class="meta">The Japan Times · Jul 28</div>
+      <h3>Magnitude-7.1 quake strikes Kumamoto; tsunami alert issued for southwestern Japan</h3>
+      <p>A magnitude-7.1 earthquake hit Kumamoto Prefecture on Kyushu, registering the maximum shindo 7 on Japan's seismic scale and triggering a tsunami advisory. The affected region hosts significant infrastructure and sits within the operating area of US forces in southwestern Japan, raising immediate force-protection and potential humanitarian-assistance/disaster-relief considerations.</p>
+      <div class="sowhat"><b>So What</b>A major Kyushu event can affect installation status, host-nation partners, and HADR demand on short notice. Commanders with Japan equities should confirm personnel accountability, facility status, and HADR readiness postures.</div>
+    </div>
+    <div class="card" style="border-left-color:#14b8a6">
+      <div class="meta">CSIS AMTI Commentary · Jul 27</div>
+      <h3>South China Sea: 2016 tribunal ruling takes on renewed significance amid Beijing's environmental record</h3>
+      <p>The 2016 arbitral ruling against China's expansive South China Sea claims is regaining legal and diplomatic weight, with fresh focus on Beijing's environmental damage to contested reefs and features. The commentary reframes an old legal victory as usable present-day leverage for claimants and partners contesting Chinese behavior in the maritime commons.</p>
+      <div class="sowhat"><b>So What</b>Legal and information lines of effort remain live tools in the maritime competition, not just gray-hull presence. Planners supporting freedom-of-navigation and partner engagement should track how the ruling is being reactivated diplomatically.</div>
+    </div>
+  </div>
+
+  <!-- EUROPE -->
+  <div class="panel" id="europe">
+    <div class="card" style="border-left-color:#6366f1">
+      <div class="meta">Institute for the Study of War · Jul 27</div>
+      <h3>Putin militarizes Russian society and again raises the army's authorized end strength</h3>
+      <p>Putin signed a July 27 decree setting the armed forces at 2,426,130 total personnel — including 1,535,000 military — a 27,000 increase (25,000 military) over his June 12 order. He used Navy Day and a Duma meeting to frame the war as a whole-of-society effort and to shift responsibility onto deputies and the public ahead of September's Duma elections. He also continues pressing personnel mobilized in 2022 to sign MoD contracts, signaling no near-term demobilization.</p>
+      <div class="sowhat"><b>So What</b>Incremental end-strength growth plus contract-retention pressure points to structural, long-war force generation rather than a drawdown. Assume sustained Russian manpower regeneration in EUCOM force-planning baselines.</div>
+    </div>
+    <div class="card" style="border-left-color:#6366f1">
+      <div class="meta">Defense One · Jul 27</div>
+      <h3>Ukraine's largest government crisis since 2022 as president and defense minister split</h3>
+      <p>A public rupture between Zelenskyy and his defense minister, following a reshuffle of top defense and cabinet leaders, has produced what Defense One calls Ukraine's biggest governmental crisis since the 2022 invasion. The turmoil lands precisely as Kyiv holds battlefield momentum and courts Washington — introducing political fragility into wartime defense decision-making and reform.</p>
+      <div class="sowhat"><b>So What</b>Leadership churn at Ukraine's defense apex can disrupt continuity in planning, procurement, and allied coordination. Watch for effects on weapons-absorption and co-production timelines that Western support depends on.</div>
+      <div class="readlink"><a href="https://www.defenseone.com/threats/2026/07/game-thrones-ukraines-president-defense-minister-split/415009">Read full article →</a></div>
+    </div>
+    <div class="card" style="border-left-color:#6366f1">
+      <div class="meta">Politico NatSec Daily / AP · Jul 27</div>
+      <h3>Zelenskyy and new UK PM Burnham deepen drone cooperation and missile-defense support</h3>
+      <p>Meeting at a British naval base in Portsmouth — Burnham's first foreign-leader engagement since taking office — the two discussed joint drone projects and Ukraine's urgent need for ballistic-missile interceptors. The UK will provide Kyiv the intellectual property for the Stone Cloak electronic-warfare system, designed to jam Russian air defenses from detecting drone movements, and the leaders reviewed 200+ Ukrainian personnel training on Black Sea counter-mine operations.</p>
+      <div class="sowhat"><b>So What</b>Europe continues absorbing the lead role in sustaining Ukraine, including transferable EW IP and interceptor demand. Track allied EW technology transfer as a template — and a burden-sharing signal — for future coalition support.</div>
+    </div>
+    <div class="card" style="border-left-color:#6366f1">
+      <div class="meta">WSJ (via AFA Daily Report) · Jul 27</div>
+      <h3>Ukrainian drones hit Russia–Iran supply lines across the Caspian Sea</h3>
+      <p>Ukrainian long-range drones have struck military-supply routes linking Russia and Iran through the Caspian Sea, opening a new front where two increasingly intertwined wars converge. The strikes extend Kyiv's deep-strike campaign — which also continued against Russian oil and export infrastructure over July 26–27 — into the logistics backbone connecting Moscow to a key weapons supplier.</p>
+      <div class="sowhat"><b>So What</b>Ukraine is demonstrating reach against the Russia–Iran materiel pipeline, blurring EUCOM and CENTCOM problem sets. Assess how deep-strike against shared adversary logistics could shape both theaters' threat pictures.</div>
+    </div>
+  </div>
+
+  <!-- MIDDLE EAST -->
+  <div class="panel" id="me">
+    <div class="card" style="border-left-color:#f59e0b">
+      <div class="meta">Politico NatSec Daily / AFA (ABC News) · Jul 27</div>
+      <h3>US and Iran pursue Hormuz mechanism as Trump holds off renewed strike threat</h3>
+      <p>Trump said Washington and Tehran are having "good talks" but warned strikes would resume if negotiations fail, telling reporters the new meetings were requested by Iran. Mediators led by Qatar and Pakistan cited "significant progress," focused on a mechanism with Iran and Oman to manage vessel transit through the Strait of Hormuz. Reporting indicates Trump again deferred a major escalation after senior advisers, including the vice president, voiced concerns — though Tehran publicly denied direct negotiations.</p>
+      <div class="sowhat"><b>So What</b>The Hormuz chokepoint is the pivot: a workable transit mechanism lowers escalation risk, while a breakdown restarts strikes on short notice. CENTCOM-facing units should hold branch plans for both a fragile ceasefire and rapid resumption.</div>
+    </div>
+    <div class="card" style="border-left-color:#f59e0b">
+      <div class="meta">Politico NatSec Daily · Jul 27</div>
+      <h3>Netanyahu heads to Washington seeking renewed Iran campaign amid strained ties</h3>
+      <p>Netanyahu arrives for a one-on-one with Trump likely to push for a return to all-out war with Iran and for Israeli participation, despite a prolonged Iran war that has run past White House expectations and incomplete Lebanon and Gaza ceasefire tracks. He also faces VP Vance, who recently accused the Israeli government of "manipulating" Americans into supporting a longer Iran war. With October elections looming, analysts say Netanyahu needs a visible show of the US-Israel "bromance" for domestic survival.</p>
+      <div class="sowhat"><b>So What</b>Allied pressure to re-escalate against Iran runs counter to active US diplomacy, creating a policy fork with direct force-posture consequences. Watch the visit's readout for signals on whether CENTCOM tilts toward de-escalation or renewed strike operations.</div>
+    </div>
+  </div>
+
+  <!-- TECH & AI -->
+  <div class="panel" id="tech">
+    <div class="subhead">🤖 AI &amp; Competition</div>
+    <div class="card" style="border-left-color:#a78bfa">
+      <div class="meta">Defense One · Jul 28</div>
+      <h3>NIST unveils AI evaluation platform to grade model performance in select areas</h3>
+      <p>NIST launched an "AI Technology Evaluation" platform designed to generate exclusive data grading AI models' performance across selected mission-relevant areas. Standardized, government-run evaluation is a prerequisite for trustworthy adoption of AI in national-security workflows, giving acquisition and operational users a common yardstick rather than vendor self-reporting.</p>
+      <div class="sowhat"><b>So What</b>Objective model benchmarks shape which AI tools get accredited for defense use. Organizations piloting AI capabilities should align evaluation criteria to emerging NIST measures to smooth eventual fielding.</div>
+      <div class="readlink"><a href="https://www.defenseone.com/technology/2026/07/nist-unveils-new-ai-evaluation-platform/415044">Read full article →</a></div>
+    </div>
+    <div class="card" style="border-left-color:#a78bfa">
+      <div class="meta">Defense One · Jul 28</div>
+      <h3>More than 30 companies form Open Secure AI Alliance to defend open-source access</h3>
+      <p>Over 30 firms launched the Open Secure AI Alliance to shore up industry support for continued access to and work with open-source AI models. The move lands amid a sharpening open-weights debate — including a Chinese push to flood the world with cheap open models — making the terms of open-source AI a great-power-competition issue, not just a commercial one.</p>
+      <div class="sowhat"><b>So What</b>Who sets the norms for open-model security and access has direct competition and supply-chain implications. Track whether US-aligned open-source frameworks can keep pace with Chinese open-weight proliferation.</div>
+      <div class="readlink"><a href="https://www.defenseone.com/business/2026/07/over-30-companies-form-open-source-ai-alliance/415043">Read full article →</a></div>
+    </div>
+    <div class="card" style="border-left-color:#a78bfa">
+      <div class="meta">WSJ China · Jul 28</div>
+      <h3>China's AI-independence narrative undercut as its own markets track Wall Street and Seoul</h3>
+      <p>Chinese regulators blamed a hard mainland tech selloff on "imported risk" from abroad, an indirect admission that Chinese equity swings now run through US AI sentiment and Korean chip volatility rather than domestic fundamentals. Even as Beijing touts self-reliance — DeepSeek, Moonshot's Kimi, and domestic memory maker CXMT — analysts note valuations rest on a domestic-substitution story priced like Nvidia's ecosystem without Nvidia's numbers. State plunge-protection buying steadied indices, but the tech names depend on foreign sentiment holding.</p>
+      <div class="sowhat"><b>So What</b>China's tech-sovereignty push is more financially dependent on the US-led market than its messaging admits, a real vulnerability in the economic instrument. Watch for policy moves to insulate strategic chip and AI firms from that exposure.</div>
+    </div>
+
+    <div class="subhead">🔒 Cyber &amp; Emerging Tech</div>
+    <div class="card" style="border-left-color:#a78bfa">
+      <div class="meta">TLDR Information Security · Jul 28</div>
+      <h3>ChatGPT Agent Builder flaw let attackers seed malicious initialization via URL parameters</h3>
+      <p>Zenity Labs found the ChatGPT Workspace Agent Builder would accept initialization states passed through URL parameters such as a template name, opening a path for attackers to preload agents with attacker-controlled instructions. The flaw illustrates a widening class of agentic-AI vulnerabilities where the attack surface is the agent's configuration and context, not traditional code.</p>
+      <div class="sowhat"><b>So What</b>As units experiment with AI agents, their setup and prompt/context pipelines become an exploitable attack surface. Ensure any AI-agent pilots enforce validated, locked-down initialization and treat agent config as security-sensitive.</div>
+    </div>
+    <div class="card" style="border-left-color:#a78bfa">
+      <div class="meta">ASPI The Strategist · Jul 28</div>
+      <h3>Legacy 'end-of-life' technology is a national-security threat hiding in plain sight</h3>
+      <p>The core problem with unsupported legacy technology is not unknown risk but the absence of any mechanism that forces a decision — ownership is diffused across operators, boards, procurement teams, regulators, and ministers until accountability disappears. A new ASPI assessment warns that AI has compressed the response window to fix vulnerabilities in aging systems, turning deferred modernization into an exploitable strategic weakness.</p>
+      <div class="sowhat"><b>So What</b>Aging, unsupported systems in the enterprise are a live vulnerability that no one may formally own. Identify end-of-life hardware and software in your area of responsibility and force an explicit accept/mitigate/replace decision.</div>
+      <div class="readlink"><a href="https://www.aspistrategist.org.au/legacy-technology-is-a-national-security-threat-hiding-in-plain-sight/">Read full article →</a></div>
+    </div>
+  </div>
+
+  <!-- CITIES -->
+  <div class="panel" id="cities">
+    <div class="card" style="border-left-color:#38bdf8">
+      <div class="meta">The Nevadan · Jul 27</div>
+      <h3>Nevada ranks among the nation's worst school systems, new study finds</h3>
+      <p>A new analysis ranked Nevada 45th nationally for its school system, citing weak pupil-teacher ratios, low median ACT scores, and poor math and reading results. The finding is directly relevant to service members and DoD civilians PCS-ing to the Las Vegas area with school-age children weighing on-base, public, and charter options.</p>
+    </div>
+    <div class="eventblock">
+      <h3>🎯 What To Do — Vegas Family Guide</h3>
+      <div class="event">
+        <div class="name">Performing &amp; Visual Arts Summer Camp Performance</div>
+        <div class="venue">Las Vegas · Friday, 6:30–8:30 p.m.</div>
+        <p class="desc">A community summer-camp showcase of youth performing and visual arts — an easy, low-key evening out for families with elementary and middle-school kids.</p>
+        <div class="tip">💡 Insider tip: Arrive early for parking and seating; camp showcases fill up with proud families fast.</div>
+      </div>
+      <div class="event">
+        <div class="name">Alex Zerbe's "Zaniac" Show</div>
+        <div class="venue">Las Vegas · Saturday, 2 p.m.</div>
+        <p class="desc">A high-energy, family-friendly comedy and variety act from a two-time world-record holder — physical comedy and stunts that land well with the 5–15 age range.</p>
+        <div class="tip">💡 Insider tip: A matinee slot means it's over well before dinner — pair it with an early meal nearby.</div>
+      </div>
+      <div class="event">
+        <div class="name">Back-to-School Fair</div>
+        <div class="venue">Las Vegas · Sunday, 12–2 p.m.</div>
+        <p class="desc">A free community fair timed for the new school year, typically offering supplies, resources, and kid-focused activities ahead of the first day back.</p>
+        <div class="tip">💡 Insider tip: Bring a bag — back-to-school fairs often hand out free supplies while stock lasts.</div>
+      </div>
+      <p style="font-size:12px;color:#8a9099;margin:10px 0 0">Events sourced from The Nevadan; City Cast Las Vegas returned no fresh event digest in the window. Verify times/venues before attending.</p>
+    </div>
+  </div>
+
+  <!-- FEEL GOOD -->
+  <div class="panel" id="feel">
+    <div class="card" style="border-left-color:#facc15">
+      <div class="meta">We Are The Mighty (via AFA "One More Thing") · Jul 28</div>
+      <h3>History's 'Modern Marvels' returns for the wonder weapons of World War II</h3>
+      <p>The long-running series "Modern Marvels" is back with a WWII run, covering the superweapons developed by both the Axis and the Allies, the enormous megaprojects each mounted to hasten the war's end, and the smaller but crucial gadgets that gave one side an edge over the other. It's an accessible, engrossing look at how wartime engineering pressure produced technologies that still shape the modern battlefield.</p>
+    </div>
+    <div class="card" style="border-left-color:#facc15">
+      <div class="meta">The Washington Post · Jul 28</div>
+      <h3>Being multilingual may slow brain aging and delay dementia, researchers find</h3>
+      <p>New research suggests that speaking multiple languages may delay dementia diagnoses and slow the pace at which the brain ages, adding to evidence that lifelong cognitive engagement builds resilience. For a force that already prizes language skills, it's a reminder that learning a new language pays dividends well beyond the mission.</p>
+    </div>
+    <div class="otd">
+      <h3>📅 On This Day in History</h3>
+      <ul>
+        <li><b>1914</b> — Austria-Hungary declared war on Serbia, igniting the First World War.</li>
+        <li><b>1945</b> — A B-25 Mitchell bomber, lost in fog, crashed into the Empire State Building's 79th floor, killing 14 and prompting lasting changes to aviation safety over cities.</li>
+        <li><b>1868</b> — The 14th Amendment to the US Constitution was certified as ratified, guaranteeing equal protection and due process.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>⚡ Daily Digest · Compiled from Gmail newsletter sources · Tuesday, July 28, 2026</footer>
+</div>
+
+<script>
+function showTab(id) {
+  var panels = document.querySelectorAll('.panel');
+  for (var i = 0; i < panels.length; i++) { panels[i].classList.remove('active'); }
+  var buttons = document.querySelectorAll('#tabbar button');
+  for (var j = 0; j < buttons.length; j++) { buttons[j].classList.remove('active'); }
+  var panel = document.getElementById(id);
+  if (panel) { panel.classList.add('active'); }
+  var btn = document.querySelector('#tabbar button[data-tab="' + id + '"]');
+  if (btn) { btn.classList.add('active'); }
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll('#tabbar button').forEach(function(b) {
+  b.addEventListener('click', function() { showTab(b.getAttribute('data-tab')); });
+});
+</script>
+</body>
+</html>
