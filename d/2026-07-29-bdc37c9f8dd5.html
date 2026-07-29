@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>⚡ Daily Digest — Wednesday, July 29, 2026</title>
+<style>
+:root { color-scheme: light }
+* { box-sizing: border-box; }
+body { margin:0; background:#f1f5f9; color:#0f172a; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.55; }
+.wrap { max-width:820px; margin:0 auto; padding:0 14px 60px; }
+header { padding:26px 0 14px; }
+h1 { margin:0; font-size:30px; letter-spacing:-0.5px; }
+.date { color:#475569; font-size:15px; margin-top:4px; font-weight:600; }
+.banner { background:#7f1d1d; color:#fff; border-radius:12px; padding:16px 18px; margin:14px 0 6px; box-shadow:0 2px 10px rgba(127,29,29,.25); }
+.banner .lbl { display:flex; align-items:center; gap:9px; font-size:12px; font-weight:800; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:7px; }
+.dot { width:11px; height:11px; border-radius:50%; background:#f87171; box-shadow:0 0 0 0 rgba(248,113,113,.7); animation:pulse 1.6s infinite; }
+@keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(248,113,113,.7)} 70%{box-shadow:0 0 0 12px rgba(248,113,113,0)} 100%{box-shadow:0 0 0 0 rgba(248,113,113,0)} }
+.banner h2 { margin:0 0 6px; font-size:19px; line-height:1.3; }
+.banner p { margin:0; font-size:15px; color:#fee2e2; }
+.tabs { display:flex; gap:8px; overflow-x:auto; padding:14px 0 6px; -webkit-overflow-scrolling:touch; position:sticky; top:0; background:#f1f5f9; z-index:5; }
+.tabs::-webkit-scrollbar { height:0; }
+.tab { flex:0 0 auto; border:1px solid #cbd5e1; background:#fff; color:#334155; padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; cursor:pointer; white-space:nowrap; }
+.tab.active { background:#0f172a; color:#fff; border-color:#0f172a; }
+.panel { display:none; }
+.panel.active { display:block; }
+.subhead { font-size:13px; font-weight:800; letter-spacing:.5px; text-transform:uppercase; color:#475569; margin:18px 2px 8px; }
+.card { background:#fff; border-radius:12px; padding:16px 18px; margin:12px 0; border-left:5px solid #94a3b8; box-shadow:0 1px 4px rgba(15,23,42,.06); }
+.meta { font-size:12px; color:#64748b; font-weight:600; text-transform:uppercase; letter-spacing:.4px; margin-bottom:5px; }
+.card h3 { margin:0 0 8px; font-size:18px; line-height:1.3; }
+.card p { margin:0 0 10px; font-size:15.5px; color:#1e293b; }
+.sowhat { background:#f8fafc; border:1px solid #e2e8f0; border-radius:9px; padding:10px 12px; font-size:14.5px; }
+.sowhat b { color:#0f172a; }
+.readmore { display:block; text-align:right; font-size:14px; font-weight:700; text-decoration:none; margin-top:4px; }
+.events { background:#fff; border-radius:12px; padding:6px 18px 16px; margin:14px 0; border-left:5px solid #38bdf8; }
+.event { border-bottom:1px solid #eef2f7; padding:12px 0; }
+.event:last-child { border-bottom:none; }
+.event h4 { margin:0 0 3px; font-size:16px; }
+.event .venue { font-size:13px; color:#64748b; font-weight:600; }
+.tip { font-size:14px; color:#0369a1; margin-top:5px; }
+.otd { background:#fff; border-radius:12px; padding:6px 18px 16px; margin:14px 0; border-left:5px solid #facc15; }
+.otd .subhead { margin-top:14px; }
+.otd div { padding:9px 0; border-bottom:1px solid #f1f5f9; font-size:15px; }
+.otd div:last-child { border-bottom:none; }
+.otd .yr { font-weight:800; color:#0f172a; }
+footer { color:#64748b; font-size:12.5px; text-align:center; margin-top:30px; padding-top:16px; border-top:1px solid #e2e8f0; }
+/* accent per tab */
+.b-def{border-left-color:#ef4444}.b-us{border-left-color:#3b82f6}.b-pac{border-left-color:#14b8a6}
+.b-eu{border-left-color:#6366f1}.b-me{border-left-color:#f59e0b}.b-tech{border-left-color:#a78bfa}
+.b-cit{border-left-color:#38bdf8}.b-fg{border-left-color:#facc15}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>⚡ Daily Digest</h1>
+  <div class="date">Wednesday, July 29, 2026</div>
+</header>
+
+<div class="banner">
+  <div class="lbl"><span class="dot"></span> Breaking</div>
+  <h2>Iran strikes U.S. base in Jordan; U.S. and Saudi Arabia hit Iranian proxies in Iraq</h2>
+  <p>Iran launched its first ballistic-missile barrage at a U.S. base in Jordan since Trump's Friday pause in strikes; U.S. forces say they intercepted it. Overnight, U.S. Central Command and Saudi Arabia jointly struck "multiple terrorist logistics and weapons sites across eastern Iraq" in response to 30-plus IRGC-directed drone attacks — Riyadh's apparent entry into the fight. Trump is now threatening to hit Iran "hard." A weekend truce has collapsed and escalation risk is climbing.</p>
+</div>
+
+<div class="tabs" id="tabs">
+  <button class="tab active" onclick="showTab('me',this)">🏜️ Middle East</button>
+  <button class="tab" onclick="showTab('def',this)">🛡️ Defense</button>
+  <button class="tab" onclick="showTab('eu',this)">🇪🇺 Europe</button>
+  <button class="tab" onclick="showTab('pac',this)">🌏 Pacific</button>
+  <button class="tab" onclick="showTab('us',this)">🇺🇸 US</button>
+  <button class="tab" onclick="showTab('tech',this)">💻 Tech &amp; AI</button>
+  <button class="tab" onclick="showTab('fg',this)">🌟 Feel Good</button>
+</div>
+
+<!-- MIDDLE EAST -->
+<div class="panel active" id="me">
+  <div class="card b-me">
+    <div class="meta">POLITICO NatSec Daily · Jul 28</div>
+    <h3>Trump rebuffs Netanyahu's push to escalate on Iran's "Pickaxe Mountain" nuclear site</h3>
+    <p>Netanyahu got his hour-plus Oval Office meeting — entering via a side door to dodge reporters — but no U.S. commitment to widen the war. He came armed with Israeli intelligence that Iran is rebuilding nuclear facilities at the Pickaxe Mountain site; Trump dismissed the pitch on Fox as an effort "to keep me involved," insisting U.S. satellites already have a clear picture and that Washington will hit the site only if diplomacy fails. The muted, side-entrance optics reflect Israel's sliding U.S. popularity, with a record 60% of Americans now viewing Israel unfavorably.</p>
+    <div class="sowhat"><b>So what:</b> Washington is holding escalation in reserve, not off the table — CENTCOM and air components should assume Pickaxe Mountain remains a live contingency target and keep SEAD/strike packages postured even as the diplomatic track runs.</div>
+  </div>
+  <div class="card b-me">
+    <div class="meta">POLITICO NatSec Daily · Jul 28</div>
+    <h3>Oman floats Gulf-backed "voluntary fee" plan to unstick the Strait of Hormuz</h3>
+    <p>Oman has handed Tehran a proposal, backed by Gulf states, to impose voluntary transit fees on ships passing through the Strait of Hormuz — modeled on the Strait of Malacca arrangement where Indonesia, Malaysia and Singapore fund navigation safety through voluntary contributions. Iran has insisted it should co-control the strait with Oman and levy service fees, a claim Washington rejects as illegal; Tehran has not yet responded. Months of U.S.–Iran sparring over the waterway have paralyzed trade through the chokepoint.</p>
+    <div class="sowhat"><b>So what:</b> A fee regime could de-escalate the Hormuz standoff without a U.S. security guarantee — watch whether Tehran bites, as any deal reshapes freedom-of-navigation assumptions and escort requirements for the region.</div>
+  </div>
+  <div class="card b-me">
+    <div class="meta">AFA Daily Report / DefenseScoop · Jul 29</div>
+    <h3>CENTCOM stands up first U.S.–UAE bilateral military AI task force</h3>
+    <p>The U.S. and UAE are forming a joint military crew to integrate their forces' artificial-intelligence capabilities and deploy shared assets to monitor and enhance regional security. It is the first bilateral AI task force of its kind and lands amid active CENTCOM operations against Iran and its proxies. The move deepens a Gulf partner's technical integration with U.S. forces at a moment of open regional conflict.</p>
+    <div class="sowhat"><b>So what:</b> Allied AI integration is moving from concept to standing structure — expect data-sharing, ISR-fusion and interoperability questions to land on component staffs faster than doctrine can keep up.</div>
+  </div>
+  <div class="card b-me">
+    <div class="meta">AFA Daily Report / Task &amp; Purpose · Jul 29</div>
+    <h3>"Wild Weasel" SEAD missions become central to the Iran air campaign</h3>
+    <p>As fighting with Iran reignited in early July, the Air Force surged F-16s and F-35s from Germany and the U.K. into the theater, with suppression of enemy air defenses (SEAD) now core to operations over hostile territory. The decades-old "Wild Weasel" mission set has again become essential to opening and holding air corridors as the U.S. wages an extensive air campaign. Demand is pulling specialized crews and platforms into CENTCOM from other theaters.</p>
+    <div class="sowhat"><b>So what:</b> SEAD capacity is a finite, high-demand resource — commanders outside CENTCOM should expect continued sourcing pressure on EW-capable airframes and Weasel-qualified aircrew.</div>
+  </div>
+</div>
+
+<!-- DEFENSE -->
+<div class="panel" id="def">
+  <div class="card b-def">
+    <div class="meta">Breaking Defense / AFA · Jul 29</div>
+    <h3>Air Force weighs pulling B-52s out of the boneyard, driven by Middle East demand</h3>
+    <p>The Air Force is considering — "maybe," per a senior official — dragging retired B-52 Stratofortresses back out of the Davis-Monthan boneyard, prompted in part by the operational tempo of Middle East operations. The prospect underscores how thin the bomber force has become as CENTCOM demand competes with modernization plans. It comes alongside a separate decision to resume B-52 radar-upgrade testing with a second aircraft after a fatal California crash paused the program.</p>
+    <div class="sowhat"><b>So what:</b> A force that is contemplating un-retiring 60-year-old bombers is signaling capacity strain — planners should assume bomber availability, not just fighters, is now a constraint on sustained theater operations.</div>
+  </div>
+  <div class="card b-def">
+    <div class="meta">Breaking Defense / AFA · Jul 28–29</div>
+    <h3>Marine Corps takes final Osprey, closing the MV-22 program of record at 359</h3>
+    <p>The Marine Corps accepted its 359th and final MV-22B Osprey on July 28, completing the program of record two decades after the tiltrotor reached initial operational capability. It closes the books on a long, controversial procurement marked by safety scrutiny. Future Osprey investment shifts from buying airframes to sustaining and upgrading the fleet.</p>
+    <div class="sowhat"><b>So what:</b> With production ended, readiness now hinges entirely on sustainment — units should expect parts-obsolescence and depot throughput, not new deliveries, to drive Osprey availability.</div>
+  </div>
+  <div class="card b-def">
+    <div class="meta">AFA Daily Report · Jul 29</div>
+    <h3>Air Force moves to buy T-7A trainer engines directly, bypassing Boeing</h3>
+    <p>The service plans to purchase engines for its new T-7A Red Hawk trainer itself rather than have prime contractor Boeing supply them under the existing contract. The shift is a notable acquisition-structure change for a program that has faced schedule pressure. It reflects a broader push to control cost and supply on troubled fixed-price programs.</p>
+    <div class="sowhat"><b>So what:</b> Government-furnished-equipment moves like this reshuffle risk and schedule ownership — acquisition and sustainment chiefs should watch for the model spreading to other over-budget programs.</div>
+  </div>
+  <div class="card b-def">
+    <div class="meta">AFA / Defense News · Jul 27–29</div>
+    <h3>First Anduril YFQ-44A rolls off the line for the CCA program</h3>
+    <p>Anduril's first Ohio-built YFQ-44A collaborative combat aircraft came off the production line on July 27, just four months after build began. The semi-autonomous drone is a centerpiece of the Air Force's plan to field affordable, uncrewed "loyal wingman" aircraft at scale. The rapid build timeline is itself a signal about the service's desired production cadence.</p>
+    <div class="sowhat"><b>So what:</b> CCA is transitioning from concept to metal — force-design and basing staffs should begin planning now for how crewed-uncrewed teams will train, arm and generate sorties.</div>
+  </div>
+</div>
+
+<!-- EUROPE -->
+<div class="panel" id="eu">
+  <div class="card b-eu">
+    <div class="meta">ISW / POLITICO NatSec · Jul 28</div>
+    <h3>Zelensky-Trump meeting yields Patriot interceptor production licenses; Witkoff, Kushner set to visit Kyiv</h3>
+    <p>Zelensky met Trump one-on-one at the White House and reported a "good" meeting focused on licensing Ukraine to produce Patriot interceptor missiles and reinvigorating diplomacy to end the war. Envoys Steve Witkoff and Jared Kushner have agreed to make their first-ever visit to Kyiv — possibly within two weeks — after repeated trips to Moscow, a shift Ukrainian observers read as Trump's orbit tilting toward engagement with Kyiv. The Patriot licensing thread builds on Trump's NATO-summit pledge on joint air-defense production.</p>
+    <div class="sowhat"><b>So what:</b> Co-producing interceptors in-theater could ease the Patriot supply crunch straining every commander — track licensing specifics, as expanded allied production directly affects global interceptor allocation.</div>
+  </div>
+  <div class="card b-eu">
+    <div class="meta">Defense One · Jul 29</div>
+    <h3>Allied aid to Ukraine shifts from missiles to designs as Kyiv out-produces its donors</h3>
+    <p>U.K. and allied support is moving from donating finished weapons to sharing designs and technology, as Ukrainian manufacturing now outpaces the countries arming it. The change reflects a maturing Ukrainian defense-industrial base that increasingly needs blueprints and components more than off-the-shelf systems. It marks a structural evolution in how the West sustains Ukraine's long-range strike capacity against Russian targets.</p>
+    <div class="sowhat"><b>So what:</b> Design-sharing is a template NATO may reuse elsewhere — expect intensifying debate over tech-transfer controls and IP as co-development replaces donation.</div>
+    <a class="readmore" href="https://www.defenseone.com/technology/2026/07/how-uk-helping-ukraine-hit-russian-targets/415077">Read full article →</a>
+  </div>
+  <div class="card b-eu">
+    <div class="meta">Institute for the Study of War · Jul 28</div>
+    <h3>Kremlin weighs new mobilization options as Ukraine sustains deep-strike campaign</h3>
+    <p>Kremlin officials are reportedly considering a wide range of options to support a potential future mobilization as Putin weighs his choices. Ukrainian forces continued long-range strikes against Russian logistics and industrial infrastructure on July 27–28, while Russia launched 131 drones overnight. Russian milbloggers again accuse commanders of lying about advances — one noting assault units sent at Ukrainian positions up to four kilometers farther away than assumed — pointing to distorted battlefield reporting reaching Putin.</p>
+    <div class="sowhat"><b>So what:</b> Mobilization signaling plus degraded Russian situational awareness shape the war's next phase — intelligence staffs should weigh Russian claims skeptically and watch mobilization indicators for escalation timing.</div>
+  </div>
+  <div class="card b-eu">
+    <div class="meta">Defense One · Jul 29</div>
+    <h3>Sikorsky pitches dual-rotor Raider as the striking rotorcraft NATO might need</h3>
+    <p>Sikorsky showcased its dual-rotor Raider helicopter at the Farnborough airshow — an aircraft the U.S. Army passed over but that could find a role in NATO's requirements. The high-speed compound design targets missions where reach and survivability matter. The pitch reflects industry hunting for European buyers as the alliance rebuilds rotary-wing capability.</p>
+    <div class="sowhat"><b>So what:</b> Alliance rotorcraft recapitalization is an open competition — planners tracking European force modernization should factor Raider into the field of contenders shaping interoperability.</div>
+    <a class="readmore" href="https://www.defenseone.com/business/2026/07/army-didnt-want-striking-rotorcraft-could-it-be-what-nato-needs/415073">Read full article →</a>
+  </div>
+</div>
+
+<!-- PACIFIC -->
+<div class="panel" id="pac">
+  <div class="card b-pac">
+    <div class="meta">Breaking Defense · Jul 28</div>
+    <h3>PACAF weighs cutting exercise participation to preserve readiness amid CENTCOM pull</h3>
+    <p>Pacific Air Forces Commander Gen. Kevin Schneider says PACAF is looking to reduce its participation in some exercises to protect "readiness," explicitly citing risk trade-offs driven by prioritized efforts in the CENTCOM region. It is a direct acknowledgment that the Iran fight is drawing resources and attention from the Indo-Pacific. Commanders are managing where to accept risk as the force absorbs competing theater demands.</p>
+    <div class="sowhat"><b>So what:</b> Middle East operations are visibly taxing Pacific readiness — INDOPACOM units should expect reduced exercise reps and plan alternate means to maintain proficiency and allied assurance.</div>
+  </div>
+  <div class="card b-pac">
+    <div class="meta">Institute for the Study of War · Jul 28</div>
+    <h3>Russia reportedly preparing to receive ~30,000 more North Korean troops</h3>
+    <p>Zelensky stated that Russia is preparing to take in roughly 30,000 new North Korean troops, per ISW's Korean Peninsula Update. A fresh tranche of that size would materially reinforce Russian manpower and further entrench the Moscow–Pyongyang military relationship. It signals continued DPRK willingness to trade combat manpower for Russian technology and cash.</p>
+    <div class="sowhat"><b>So what:</b> Deepening DPRK-Russia force integration is an Indo-Pacific problem, not just a European one — watch for combat lessons and Russian tech flowing back to Pyongyang and altering the Korea deterrence picture.</div>
+  </div>
+  <div class="card b-pac">
+    <div class="meta">ASPI The Strategist · Jul 29</div>
+    <h3>Australia's defense industry "needs allies," argues ASPI</h3>
+    <p>While Australia rightly prioritizes building domestic defense industry, the ADF is not a large enough customer to sustain that base alone, ASPI argues — allied demand and integration are required to make Australian production viable at scale. The piece frames self-reliance and alliance dependence as complementary rather than competing goals. It speaks to AUKUS-era questions about how mid-sized allies build sovereign capability.</p>
+    <div class="sowhat"><b>So what:</b> Allied industrial interdependence is becoming explicit Australian strategy — U.S. planners should anticipate more pressure to open programs and demand signals to partner industrial bases.</div>
+  </div>
+</div>
+
+<!-- US -->
+<div class="panel" id="us">
+  <div class="card b-us">
+    <div class="meta">Defense One / Washington Post · Jul 28</div>
+    <h3>Senate confirms Jay Clayton as Director of National Intelligence</h3>
+    <p>The Senate confirmed former SEC chairman Jay Clayton as DNI, ending the brief tenure of acting intelligence chief Bill Pulte, who had cut staff across the nation's top intelligence office during his roughly month-long stint. Clayton takes over the IC's senior-most coordinating role amid an active Iran conflict and ongoing war in Ukraine. The confirmation restores a Senate-vetted principal atop the intelligence enterprise.</p>
+    <div class="sowhat"><b>So what:</b> A confirmed DNI changes who owns IC prioritization and tasking during two hot conflicts — expect near-term review of collection priorities; staffs should watch for shifts in guidance and any reversal of Pulte-era cuts.</div>
+    <a class="readmore" href="https://www.defenseone.com/policy/2026/07/senate-confirms-clayton-trumps-next-intelligence-director/415075">Read full article →</a>
+  </div>
+  <div class="card b-us">
+    <div class="meta">International Intrigue · Jul 29</div>
+    <h3>Senate advances late Sen. Graham's Russia sanctions bill in initial vote</h3>
+    <p>Hours after Graham's funeral, the Senate held an initial symbolic vote on his signature sanctions bill targeting Putin's top energy buyers — a measure aimed at further choking the Kremlin's war revenue. China now buys about half of Russia's crude and India roughly 36%, while Europe still purchases 49% of Russia's LNG, and that buyer list is fueling unease on the Hill over energy-market fallout and irritating swing players like India. The bill's fate is now a test of how far Congress will go to pressure Moscow's economy.</p>
+    <div class="sowhat"><b>So what:</b> Secondary-sanctions legislation could ripple into global energy markets and partner relationships — watch the vote trajectory, as passage would hand the executive sharper economic-coercion tools against Russia's war economy.</div>
+  </div>
+</div>
+
+<!-- TECH & AI -->
+<div class="panel" id="tech">
+  <div class="subhead">🤖 AI &amp; Competition</div>
+  <div class="card b-tech">
+    <div class="meta">The Rundown AI / TLDR · Jul 29</div>
+    <h3>1,000+ frontier-AI staffers call for an industry "brake pedal" on the race to automate AI research</h3>
+    <p>More than 1,000 employees across leading AI labs have signed a call for a coordinated slowdown — a "brake pedal" — as companies say they are close to automating AI research itself. Backers frame a voluntary pact as a hedge against uncontrolled capability jumps; the push lands as labs simultaneously tout "personal superintelligence" access and new autonomous build tools. The tension between racing and restraint is now spilling into the open from inside the labs.</p>
+    <div class="sowhat"><b>So what:</b> Self-improving AI is a national-security wildcard — leaders relying on commercial models should track whether any slowdown is real or rhetorical, because the pace of frontier progress drives adversary capability timelines too.</div>
+  </div>
+  <div class="card b-tech">
+    <div class="meta">Defense One · Jul 29</div>
+    <h3>30+ companies form Open Secure AI Alliance to defend open-source models</h3>
+    <p>More than 30 companies have launched the Open Secure AI Alliance to shore up industry support for continued access to and work with open-source artificial-intelligence models. The coalition aims to keep open models viable amid tightening security and policy pressure. Open-source availability is increasingly a great-power-competition issue given its role in downstream military and commercial systems.</p>
+    <div class="sowhat"><b>So what:</b> Whether open models stay accessible shapes the defense AI supply chain — programs building on open weights should watch this alliance's standards work and any export-control crosswinds.</div>
+    <a class="readmore" href="https://www.defenseone.com/business/2026/07/over-30-companies-form-open-source-ai-alliance/415043">Read full article →</a>
+  </div>
+  <div class="subhead">🔒 Cyber &amp; Emerging Tech</div>
+  <div class="card b-tech">
+    <div class="meta">TLDR · Jul 29</div>
+    <h3>Microsoft's "Project Perception" pits AI agents against AI-driven attacks</h3>
+    <p>Microsoft's Project Perception is an AI cybersecurity system that coordinates red-, blue-, and green-team agents to defend against AI-driven attacks. The design points toward machine-speed, autonomous cyber defense as adversaries begin fielding AI-enabled offensive tooling. It is an early marker of how defenders intend to match automated attack tempo.</p>
+    <div class="sowhat"><b>So what:</b> Machine-speed cyber defense is arriving — network defenders should begin assessing how agent-based tooling changes detection, authorities, and human-in-the-loop requirements for their own environments.</div>
+  </div>
+</div>
+
+<!-- FEEL GOOD -->
+<div class="panel" id="fg">
+  <div class="otd">
+    <div class="subhead">📅 On This Day in History — July 29</div>
+    <div><span class="yr">1958</span> — President Eisenhower signed the National Aeronautics and Space Act, creating NASA and launching America's civilian space program.</div>
+    <div><span class="yr">1967</span> — A catastrophic fire aboard the carrier USS Forrestal off Vietnam killed 134 sailors, reshaping U.S. Navy damage-control and firefighting doctrine for generations.</div>
+    <div><span class="yr">1981</span> — Prince Charles and Lady Diana Spencer married at St Paul's Cathedral before a global TV audience estimated at 750 million.</div>
+  </div>
+</div>
+
+<footer>
+  ⚡ Daily Digest — Wednesday, July 29, 2026 · Compiled from Gmail newsletters (rolling 36-hour window).<br>
+  Sources this edition: POLITICO NatSec Daily, Washington Post, Axios, Defense One, AFA Daily Report, Breaking Defense, ISW, International Intrigue, ASPI, The Rundown AI, TLDR. For senior operational-level readers; framed through the DIME lens.
+</footer>
+</div>
+
+<script>
+function showTab(id, btn){
+  var panels=document.querySelectorAll('.panel');
+  for(var i=0;i<panels.length;i++){panels[i].classList.remove('active');}
+  document.getElementById(id).classList.add('active');
+  var tabs=document.querySelectorAll('.tab');
+  for(var j=0;j<tabs.length;j++){tabs[j].classList.remove('active');}
+  btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
