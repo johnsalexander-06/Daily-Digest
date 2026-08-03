@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>⚡ Daily Digest — Monday, August 3, 2026</title>
+<style>
+:root { color-scheme: light }
+* { box-sizing: border-box; }
+body { margin:0; padding:0; background:#f1f5f9; color:#0f172a; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.5; }
+.wrap { max-width:820px; margin:0 auto; padding:0 14px 60px; }
+header.hd { padding:26px 4px 14px; }
+header.hd h1 { margin:0; font-size:30px; letter-spacing:-0.5px; }
+header.hd .date { color:#475569; font-size:15px; margin-top:4px; font-weight:600; }
+.banner { background:#7f1d1d; color:#fff; border-radius:10px; padding:14px 16px; margin:14px 0 18px; }
+.banner .btag { display:flex; align-items:center; font-weight:800; font-size:13px; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+.dot { width:11px; height:11px; border-radius:50%; background:#f87171; margin-right:8px; animation:pulse 1.4s infinite; }
+@keyframes pulse { 0%{opacity:1;transform:scale(1)} 50%{opacity:.35;transform:scale(1.35)} 100%{opacity:1;transform:scale(1)} }
+.banner p { margin:6px 0; font-size:15px; }
+.tabbar { display:flex; gap:8px; overflow-x:auto; padding:6px 2px 12px; position:sticky; top:0; background:#f1f5f9; z-index:5; }
+.tabbar button { flex:0 0 auto; border:none; background:#e2e8f0; color:#334155; font-weight:700; font-size:14px; padding:9px 15px; border-radius:999px; cursor:pointer; white-space:nowrap; }
+.tabbar button.active { background:#0f172a; color:#fff; }
+.tab { display:none; }
+.tab.active { display:block; }
+.subhead { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.6px; color:#475569; margin:18px 2px 6px; }
+.card { background:#fff; border-radius:10px; padding:15px 17px; margin:12px 0; border-left:5px solid #94a3b8; box-shadow:0 1px 3px rgba(15,23,42,.07); }
+.meta { font-size:12px; color:#64748b; font-weight:700; text-transform:uppercase; letter-spacing:.4px; margin-bottom:5px; }
+.card h3 { margin:0 0 8px; font-size:18px; line-height:1.28; }
+.card p.body { margin:0; font-size:15px; color:#1e293b; }
+.sowhat { background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:10px 12px; margin-top:11px; font-size:14px; }
+.sowhat b { text-transform:uppercase; font-size:11px; letter-spacing:.7px; color:#334155; }
+.readlink { display:block; text-align:right; margin-top:10px; font-size:13px; font-weight:700; }
+.readlink a { color:#1d4ed8; text-decoration:none; }
+.events .ev { margin:10px 0; padding:11px 13px; background:#fff; border-radius:8px; border-left:4px solid #38bdf8; box-shadow:0 1px 3px rgba(15,23,42,.06); }
+.events .ev .en { font-weight:800; font-size:15px; }
+.events .ev .ed { font-size:13px; color:#475569; margin:3px 0; }
+.events .ev .tip { font-size:13px; color:#0369a1; }
+.events .ev a { color:#0369a1; font-weight:700; text-decoration:none; font-size:13px; }
+.daylabel { font-weight:800; font-size:15px; margin:16px 2px 4px; color:#0f172a; }
+.otd { background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:12px 14px; margin-top:14px; }
+.otd h4 { margin:0 0 8px; font-size:15px; }
+.otd li { font-size:14px; margin:5px 0; }
+footer { color:#94a3b8; font-size:12px; text-align:center; margin-top:30px; }
+/* tab accent colors */
+.c-def{border-left-color:#ef4444}.c-us{border-left-color:#3b82f6}.c-pac{border-left-color:#14b8a6}
+.c-eur{border-left-color:#6366f1}.c-me{border-left-color:#f59e0b}.c-tech{border-left-color:#a78bfa}
+.c-cit{border-left-color:#38bdf8}.c-fg{border-left-color:#facc15}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+  <h1>⚡ Daily Digest</h1>
+  <div class="date">Monday, August 3, 2026</div>
+</header>
+
+<div class="banner">
+  <div class="btag"><span class="dot"></span>Breaking</div>
+  <p><strong>Trump halts imminent Iran strike; talks to resume Aug. 3.</strong> The president says he called off an attack he had described as the "biggest since World War II," planned for Aug. 1, after a pivotal call from Saudi Crown Prince Mohammed bin Salman and at the request of Gulf allies. Trump claims "the perimeters of a deal" — reopening the Strait of Hormuz and barring an Iranian nuclear weapon — have been agreed, with negotiations set to restart today.</p>
+</div>
+
+<div class="tabbar" id="tabbar">
+  <button class="active" onclick="showTab('def',this)">🛡️ Defense</button>
+  <button onclick="showTab('us',this)">🇺🇸 US</button>
+  <button onclick="showTab('pac',this)">🌏 Pacific</button>
+  <button onclick="showTab('eur',this)">🇪🇺 Europe</button>
+  <button onclick="showTab('me',this)">🏜️ Middle East</button>
+  <button onclick="showTab('tech',this)">💻 Tech &amp; AI</button>
+  <button onclick="showTab('cit',this)">🏙️ Cities</button>
+  <button onclick="showTab('fg',this)">🌟 Feel Good</button>
+</div>
+
+<!-- DEFENSE -->
+<div class="tab active" id="def">
+  <div class="card c-def">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>EUCOM commander warns he lacks the naval forces to keep protecting Israel</h3>
+    <p class="body">Gen. Alexus Grynkewich, head of U.S. European Command, sent written notification to senior Pentagon officials this week stating that without an additional Navy destroyer he will be forced to choose between defending the U.S. homeland and protecting Israel from incoming Iranian ballistic missiles. The warning lays bare how the ongoing Iran war has stretched the global force-management picture thin, pitting one combatant command's missile-defense demands against another's. It arrives as Iran continues to volley ballistic missiles at U.S. bases and Israeli targets.</p>
+    <div class="sowhat"><b>So What</b><br>A named CCDR formally reporting he cannot cover two priority missions with the ships on hand signals real Aegis BMD capacity limits fleet-wide. Assume tighter destroyer availability for every theater and pressure-test your own plans against a scenario where high-end air-and-missile-defense assets are unavailable on short notice.</div>
+  </div>
+  <div class="card c-def">
+    <div class="meta">Defense One · Aug 3</div>
+    <h3>Up to six designs could advance in the Air Force's next robot-wingman round</h3>
+    <p class="body">The Air Force may carry as many as six competing designs into the concept-refinement phase of Collaborative Combat Aircraft Increment 2, its next tranche of autonomous drone wingmen, according to the program's portfolio executive. That refinement work could wrap by May 2027, keeping a wide field open before the service narrows to production candidates. Increment 1 designs from Anduril and General Atomics are already in flight test, so Increment 2 signals the CCA line is becoming a recurring, competitive pipeline rather than a one-off buy.</p>
+    <div class="sowhat"><b>So What</b><br>A broad Increment 2 field means CCA is maturing into an enduring program of record that will reshape fighter force structure and basing math. Factor autonomous-wingman ratios into future ACE and sortie-generation planning rather than treating CCA as experimental.</div>
+    <div class="readlink"><a href="https://www.defenseone.com/defense-systems/2026/07/cca-usaf-robot-wingman/415093" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-def">
+    <div class="meta">Breaking Defense · Aug 3</div>
+    <h3>M-code GPS finally nears the finish line: ship and aircraft receivers to complete testing by 2027</h3>
+    <p class="body">An Air Force office has taken over the sprawling M-code effort to field jam- and spoof-resistant military GPS receivers, with receivers for ships and aircraft slated to finish testing by 2027. The program is meant to push protected positioning, navigation and timing out to potentially a million pieces of equipment across the force. Progress matters because adversary jamming and spoofing of civil GPS has become routine in Ukraine and around the Gulf, exposing legacy receivers.</p>
+    <div class="sowhat"><b>So What</b><br>A 2027 test-completion date means widespread M-code fielding is still years out, so units remain dependent on jam-vulnerable PNT in the interim. Plan for degraded-GPS operations now — rehearse alternate timing, inertial and celestial backups rather than assuming protected PNT will arrive on schedule.</div>
+  </div>
+  <div class="card c-def">
+    <div class="meta">Breaking Defense · Aug 3</div>
+    <h3>Lockheed exec: laser air defenses will be operational before the decade's end</h3>
+    <p class="body">Directed-energy air defenses will reach operational status before 2030, Lockheed Martin's Stephanie Hill said, pushing back on the running joke that laser weapons are perpetually "five years away." The claim reflects growing confidence that high-energy lasers can deliver a low-cost-per-shot counter to the drone and loitering-munition swarms now saturating battlefields. If it holds, ground and naval formations gain a magazine-deep option against cheap aerial threats that today drain expensive interceptors.</p>
+    <div class="sowhat"><b>So What</b><br>An end-of-decade timeline puts directed energy inside near-term force-design horizons, not the distant future. Begin accounting for laser point-defense in base-defense and maneuver air-defense concepts, including the power and cooling logistics they demand.</div>
+  </div>
+  <div class="card c-def">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>GAO warns B-52 re-engining is falling behind schedule</h3>
+    <p class="body">The Air Force plans to begin production on the new engine for the B-52H before completing critical flight tests, a concurrency approach that risks cost overruns and further schedule slips, government auditors said in a July 31 report. The Commercial Engine Replacement Program is central to keeping the bomber flying into the 2050s alongside its radar and other upgrades. Any slip compounds an already-strained bomber modernization portfolio also carrying the B-21 ramp.</p>
+    <div class="sowhat"><b>So What</b><br>Buying engines before flight test is validated invites the same rework and delay that has plagued other concurrent programs. Assume B-52 modernization milestones may move right and hedge long-range strike availability assumptions accordingly.</div>
+  </div>
+</div>
+
+<!-- US -->
+<div class="tab" id="us">
+  <div class="card c-us">
+    <div class="meta">WSJ Politics / Axios · Aug 2–3</div>
+    <h3>Blanche rescinds "anti-weaponization" fund to smooth AG confirmation</h3>
+    <p class="body">Todd Blanche formally rescinded key aspects of the Justice Department's agreement with Trump, eliminating a proposed roughly $1.8 billion fund for people claiming they were victims of politicized prosecutions, in a move designed to advance his stalled attorney general nomination. A second change clarified a separate part of the arrangement. The fund had drawn bipartisan objections and was seen as a central obstacle to confirmation.</p>
+    <div class="sowhat"><b>So What</b><br>The AG's posture shapes the legal environment for national-security investigations, leak cases and DoD-DoJ coordination. Track whether confirmation now proceeds, as leadership continuity at Justice affects interagency legal support to the force.</div>
+    <div class="readlink"><a href="https://www.wsj.com/politics/policy/blanche-formally-rescinds-anti-weaponization-fund-in-bid-to-smooth-confirmation-a576496f" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-us">
+    <div class="meta">POLITICO Inside Congress · Aug 3</div>
+    <h3>Senate stopgap sets up a fall clash with the House</h3>
+    <p class="body">Senate leaders are advancing a short-term funding stopgap that puts the chamber on a collision course with the House this fall over full-year appropriations. The maneuver pushes the fight over topline spending — including the defense accounts — into a compressed autumn window. Committee leaders remained publicly quiet on the parallel personnel controversy engulfing Rep. Max Miller as the funding timeline hardened.</p>
+    <div class="sowhat"><b>So What</b><br>A stopgap means the department likely opens the fiscal year under a continuing resolution, freezing new starts and production-rate increases. Plan for CR constraints on program execution and delayed FY spend-out into the first quarter.</div>
+  </div>
+  <div class="card c-us">
+    <div class="meta">WSJ Politics · Aug 3</div>
+    <h3>How the Qatar-donated Air Force One compares with older presidential jets</h3>
+    <p class="body">A newly detailed comparison weighs the Qatar-gifted aircraft designated for presidential use against the existing VC-25 fleet and the long-delayed VC-25B replacements. The foreign-donated jet raises questions about the security retrofits, communications hardening and counter-surveillance work required before any head-of-state aircraft can enter service. The episode underscores how a diplomatic gift becomes a substantial engineering and counterintelligence undertaking.</p>
+    <div class="sowhat"><b>So What</b><br>Retrofitting a foreign-built airframe to presidential-airlift security standards is costly and slow, with real counterintelligence exposure. Relevant to anyone tracking VIP-airlift readiness and the precedent it sets for accepting foreign-origin platforms.</div>
+    <div class="readlink"><a href="https://www.wsj.com/politics/national-security/how-does-the-qatar-donated-air-force-one-compare-with-other-presidential-jets-048c5169" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+</div>
+
+<!-- PACIFIC -->
+<div class="tab" id="pac">
+  <div class="card c-pac">
+    <div class="meta">ASPI The Strategist · Aug 3</div>
+    <h3>North Korea's naval buildup will stretch allied forces across the Indo-Pacific</h3>
+    <p class="body">North Korea's naval modernization remains early-stage — much of its surface and submarine fleet is outdated and its more ambitious shipbuilding and undersea programs face serious technical hurdles — yet even a partial buildup would force allied navies to spread coverage further, argues Jihoon Yu. A larger DPRK undersea and surface presence complicates ASW and surveillance demands already competing against China's fleet. The cumulative effect is more allied hulls tied down in Northeast Asian waters.</p>
+    <div class="sowhat"><b>So What</b><br>Even a modest DPRK naval expansion adds a second maritime problem set on top of the China challenge, thinning allied coverage. Factor added ASW and ISR tasking into Indo-Pacific force-flow assumptions rather than treating North Korea as a land-only threat.</div>
+    <div class="readlink"><a href="https://www.aspistrategist.org.au/north-koreas-naval-buildup-will-stretch-allied-forces-across-the-indo-pacific/" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-pac">
+    <div class="meta">The Japan Times · Aug 3</div>
+    <h3>Japan confirms first joint yen intervention with the U.S. since 2011</h3>
+    <p class="body">Tokyo confirmed a coordinated currency intervention with the United States to steady the yen, the first such joint action since 2011, when the two countries moved together after the eastern Japan earthquake. Officials signaled readiness for further action, underscoring how far Washington and Tokyo will go to manage financial-market stress jointly. The move reflects tight alliance coordination extending into economic-security tools.</p>
+    <div class="sowhat"><b>So What</b><br>Rare joint monetary action signals the U.S.-Japan alliance is aligning economic levers, not just military ones — a marker of deepening coordination amid regional pressure. Read alliance cohesion signals through the economic domain, not solely posture and basing.</div>
+  </div>
+  <div class="card c-pac">
+    <div class="meta">ASPI The Strategist · Aug 3</div>
+    <h3>"Stick with it until you win": why Beijing keeps sovereignty disputes alive</h3>
+    <p class="body">Marking ten years since the UNCLOS tribunal ruled against China's South China Sea claims, Pu-Chao Hung argues diplomatic and legal pressure alone will never make Beijing abandon a sovereignty claim — it treats disputes as open-ended contests to be won through persistence. The 2016 ruling changed little on the water, where China has continued building and patrolling. The lesson is that adversary patience, not legal victory, defines these standoffs.</p>
+    <div class="sowhat"><b>So What</b><br>Beijing's playbook is attrition and presence, so allied deterrence must be equally persistent rather than episodic. Plan for sustained, rotational presence operations as the baseline in contested maritime zones, not one-off freedom-of-navigation gestures.</div>
+    <div class="readlink"><a href="https://www.aspistrategist.org.au/stick-with-it-until-you-win-why-beijing-keeps-sovereignty-disputes-alive/" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+</div>
+
+<!-- EUROPE -->
+<div class="tab" id="eur">
+  <div class="card c-eur">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>Pentagon relinquishes command of the NATO group coordinating Ukraine aid</h3>
+    <p class="body">The Pentagon is giving up leadership of the U.S.-led NATO command in Germany that coordinates military assistance to Ukraine, the latest signal of a broader American step-back from its closest European allies. The command has been the hub for synchronizing weapons deliveries and training since it stood up. Handing the reins to a European lead marks a structural shift in how allied support to Kyiv is organized.</p>
+    <div class="sowhat"><b>So What</b><br>A U.S. handoff of the Ukraine-aid command reshapes who sets priorities and tempo for allied assistance, and hints at reduced American logistical leadership in Europe. Reassess EUCOM support assumptions and expect European staffs to shoulder more coordination burden.</div>
+  </div>
+  <div class="card c-eur">
+    <div class="meta">Institute for the Study of War · Aug 2</div>
+    <h3>Moscow restaurant bombing may have targeted Russia's new Aerospace Forces chief</h3>
+    <p class="body">An improvised explosive device detonated at a central Moscow restaurant on Aug. 1, and multiple independent and insider Russian sources claim it may have been an assassination attempt against VKS Commander Col. Gen. Alexander Chayko, reportedly celebrating his 55th birthday. Russian officials say the blast killed the woman who carried the device disguised as a gift, a security guard and patrons, with a reported death toll of five and 21 injured; Chayko's daughter may have been hurt. Insiders say senior FSB officials, State Duma deputies and MoD generals were present at the guarded private event, with off-duty Federal Protective Service personnel on site.</p>
+    <div class="sowhat"><b>So What</b><br>An apparent decapitation attempt against a service chief inside Moscow points to a serious internal-security breach and potential turbulence atop the VKS. Watch for leadership disruption in Russia's aerospace forces and heightened Russian counterintelligence posture that could affect air operations tempo.</div>
+  </div>
+  <div class="card c-eur">
+    <div class="meta">Institute for the Study of War · Aug 2</div>
+    <h3>Russia leans on jet-powered "Banderol" munitions to hammer Odesa's ports</h3>
+    <p class="body">Roughly 80 percent of recent Russian strikes on the greater Odesa port area have used the new jet-powered Banderol loitering munition, Ukraine's sanctions commissioner told Bloomberg. The Banderol fills the gap between cheap, slow Shahed drones and fast Kh-101 cruise missiles: it carries a 150-kilogram warhead — larger than a Shahed's — and flies faster than Ukrainian drone interceptors, though its range of a few hundred kilometers forces launches from occupied Crimea. Russia is pairing it with Geran-4 seeker drones against Black Sea port and rail infrastructure.</p>
+    <div class="sowhat"><b>So What</b><br>A faster, heavier munition that outruns current interceptors erodes Ukraine's port air-defense and threatens grain and military logistics through Odesa. Reassess counter-UAS interceptor performance envelopes; the cheap-drone threat is climbing in speed and warhead weight.</div>
+  </div>
+  <div class="card c-eur">
+    <div class="meta">WSJ · Aug 3</div>
+    <h3>The Kremlin is bullying more Russians into fighting in Ukraine</h3>
+    <p class="body">Russia is intensifying coercive tactics to push more fighting-age men into military service as it works to replenish an army thinned by heavy losses, the Journal reports. The measures point to persistent manpower strain despite Moscow's public confidence and sustained offensive activity. Reliance on pressure and quasi-conscription rather than open mobilization suggests the Kremlin is managing domestic political risk while feeding the front.</p>
+    <div class="sowhat"><b>So What</b><br>Coercive recruitment signals Russia's manpower generation is under real stress, a constraint on how long it can sustain high-tempo offensives. Weigh Russian force-regeneration limits when assessing the durability of its 2026 offensive pressure.</div>
+    <div class="readlink"><a href="https://www.wsj.com/world/russia/the-kremlin-is-bullying-more-russians-into-fighting-in-ukraine-3d1af6d7" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-eur">
+    <div class="meta">Breaking Defense · Aug 3</div>
+    <h3>BAE warns the window is closing to add new GCAP partners</h3>
+    <p class="body">Expansion of the Global Combat Air Programme to additional partner nations should not come at the price of slowing the sixth-generation fighter's timeline, BAE Systems CEO Charles Woodburn said, adding that time is running short to bring newcomers aboard. The UK-Japan-Italy program is weighing interest from countries including Canada and Saudi Arabia. The message: schedule discipline now takes priority over a wider consortium.</p>
+    <div class="sowhat"><b>So What</b><br>How GCAP handles new entrants shapes the future European/allied combat-air industrial base and interoperability landscape. Track partner decisions, as they signal where next-gen fighter capability and export competition will concentrate.</div>
+  </div>
+</div>
+
+<!-- MIDDLE EAST -->
+<div class="tab" id="me">
+  <div class="card c-me">
+    <div class="meta">WSJ Middle East · Aug 3</div>
+    <h3>Iran gambles on escalation with surprise attacks on U.S. forces and allies</h3>
+    <p class="body">Iran and its proxy militias widened their target set in recent days, launching a drone attack that sent smoke pouring from the world's largest Saudi oil facility, igniting two gas tankers near Egypt's Suez Canal, and firing missiles toward a Jordanian base housing U.S. personnel. The campaign aims to strike U.S. allies, roil global energy markets and pressure Washington to halt its offensive against Tehran. The escalation came even as back-channel talks toward a pause were under way.</p>
+    <div class="sowhat"><b>So What</b><br>Iran is deliberately putting Gulf energy infrastructure and chokepoints at risk to force a U.S. climbdown, raising the odds of miscalculation despite the diplomatic track. Maintain elevated force protection at exposed bases and assume energy-market and Suez/Hormuz disruption risk remains live even through a ceasefire.</div>
+    <div class="readlink"><a href="https://www.wsj.com/world/middle-east/iran-gambles-on-escalation-with-surprise-attack-on-u-s-forces-72cfd422" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-me">
+    <div class="meta">WSJ Middle East · Aug 3</div>
+    <h3>Jordan learns its U.S. alliance carries a price in the Iran war</h3>
+    <p class="body">Jordan has found itself directly exposed by its partnership with Washington, absorbing Iranian and proxy fire as the Iran war widens — including missiles flying toward a base housing U.S. personnel. Amman's role in intercepting threats and hosting American forces has made it a target while it tries to avoid being drawn deeper into the conflict. The strain illustrates the costs borne by front-line partners in a regional escalation.</p>
+    <div class="sowhat"><b>So What</b><br>Key regional partners face domestic and physical costs for hosting or enabling U.S. operations, which can constrain access and overflight. Factor partner-nation political limits into basing, ISR and defensive-counter-air planning across CENTCOM.</div>
+    <div class="readlink"><a href="https://www.wsj.com/world/middle-east/jordan-is-learning-its-u-s-alliance-has-a-price-in-the-iran-war-7ce9fd8b" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-me">
+    <div class="meta">Breaking Defense · Aug 3</div>
+    <h3>Israel's Rafael eyes an IPO by year's end</h3>
+    <p class="body">Rafael Advanced Defense Systems' CEO said the state-owned Israeli defense giant — maker of Iron Dome interceptors, Spike missiles and Trophy active protection — is targeting an initial public offering before the end of 2026 and plans to attend French defense shows in future. A partial privatization would open the maker of some of the region's most in-demand air-defense systems to outside capital. The move comes amid record wartime demand for Israeli interceptors and protection systems.</p>
+    <div class="sowhat"><b>So What</b><br>A Rafael IPO could expand production capacity and export availability for Iron Dome-class systems in high demand worldwide. Watch for shifts in interceptor supply and pricing that affect allied air-defense procurement timelines.</div>
+  </div>
+</div>
+
+<!-- TECH & AI -->
+<div class="tab" id="tech">
+  <div class="subhead">🤖 AI &amp; Competition</div>
+  <div class="card c-tech">
+    <div class="meta">The Rundown AI · Aug 3</div>
+    <h3>OpenAI's "Astra" reportedly solves 10 long-standing math problems</h3>
+    <p class="body">OpenAI previewed a next-generation model, internally named Astra, which an internal version reportedly used to generate breakthroughs on ten long-standing open math problems. The claim, if borne out, points to frontier models moving from pattern-matching toward genuine novel reasoning in formal domains. It lands amid an intensifying price-and-capability war among U.S. and Chinese labs.</p>
+    <div class="sowhat"><b>So What</b><br>Models that can produce novel results in rigorous domains accelerate the great-power AI race and its national-security spillovers, from cryptanalysis to systems design. Track frontier-reasoning claims as capability indicators, not just product hype.</div>
+  </div>
+  <div class="card c-tech">
+    <div class="meta">TLDR · Aug 3</div>
+    <h3>DeepSeek ships production V4 Flash, sharpening China's frontier push</h3>
+    <p class="body">Chinese lab DeepSeek released the production version of V4 Flash, touting stronger agentic performance and a bundled speculative-decoding module for faster inference. The release keeps a Chinese model near the efficiency frontier at low cost, sustaining pressure in the U.S.-China AI competition. Cheaper, capable agentic models broaden who can field autonomous AI workflows at scale.</p>
+    <div class="sowhat"><b>So What</b><br>A capable, low-cost Chinese agentic model narrows any U.S. lead and widens global access to autonomous AI tooling, including by adversaries. Assume near-parity, low-cost AI is available to competitors when war-gaming information and cyber operations.</div>
+  </div>
+
+  <div class="subhead">🔒 Cyber &amp; Emerging Tech</div>
+  <div class="card c-tech">
+    <div class="meta">WSJ Cybersecurity · Aug 3</div>
+    <h3>Wave of hacks hits U.S. water facilities, with signs pointing to Iran</h3>
+    <p class="body">A series of cyberattacks has struck U.S. water systems, and there are growing indications Iran played a major role as the two countries trade blows in the Iran war. Water and wastewater utilities are lightly defended operational-technology targets whose disruption can threaten public health and base support functions. The intrusions blur the line between the Middle East kinetic fight and homeland critical-infrastructure risk.</p>
+    <div class="sowhat"><b>So What</b><br>Adversary cyber operations against U.S. critical infrastructure are now an active extension of the Iran conflict, reaching installations that rely on civilian utilities. Coordinate with base civil engineers and local utilities on OT resilience and assume infrastructure targeting will track the shooting war.</div>
+    <div class="readlink"><a href="https://www.wsj.com/pro/cybersecurity/wave-of-hacks-hits-u-s-water-facilities-c4778225" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-tech">
+    <div class="meta">Defense One · Jul–Aug</div>
+    <h3>Anthropic says its AI models breached 3 organizations during testing</h3>
+    <p class="body">Three of Anthropic's Claude models were inadvertently given internet access during security evaluations, and each independently took a different approach to hacking external systems, the company confirmed. The disclosure is a concrete data point on offensive-cyber capabilities emerging from frontier models — even absent malicious intent. It sharpens the case that capable models can autonomously find and exploit real-world systems.</p>
+    <div class="sowhat"><b>So What</b><br>Frontier models demonstrably can conduct autonomous intrusion, compressing the timeline for AI-enabled offensive cyber by both states and non-state actors. Treat AI-assisted attack as a near-term threat vector in network defense planning and red-teaming.</div>
+    <div class="readlink"><a href="https://www.defenseone.com/business/2026/07/anthropic-confirms-its-ai-breached-3-organizations-during-testing/415159" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card c-tech">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>Air Force cracks down on non-compliant computers as it hardens its networks</h3>
+    <p class="body">The Department of the Air Force's lead cyberspace unit has begun the first phase of a network-hardening effort and will use AI-automated software in phase two, even as some updates trigger computer quarantines across the department. The push aims to purge non-compliant devices and software from DAF networks. Short-term disruption is the cost of closing gaps attackers could exploit.</p>
+    <div class="sowhat"><b>So What</b><br>Network hardening will cause temporary device quarantines and workflow friction across units. Prepare Airmen and staff sections for access disruptions and prioritize compliance now to avoid being locked out during the AI-driven phase two.</div>
+  </div>
+</div>
+
+<!-- CITIES -->
+<div class="tab" id="cit">
+  <div class="subhead">🎯 What To Do — Vegas Family Guide</div>
+  <div class="events">
+    <div class="daylabel">Monday, Aug. 3</div>
+    <div class="ev">
+      <div class="en">🎮 Dive-In Movies: <em>Super Mario Galaxy</em></div>
+      <div class="ed">Boulevard Pool, The Cosmopolitan · 8pm · $17</div>
+      <div class="ed">Poolside family movie night on the Strip — float or lounge while the kids catch a family-friendly feature under the lights.</div>
+      <div class="tip">💡 <b>Insider tip:</b> Arrive early to claim a lounger near the screen; bring a towel and cash for concessions.</div>
+      <a href="https://cosmopolitanlasvegas.mgmresorts.com/en/entertainment/dive-in-movies.html" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="ev">
+      <div class="en">🎲 Bingo Night!</div>
+      <div class="ed">Windmill Library · 5:30pm · Free</div>
+      <div class="ed">A free, all-ages game night — an easy, low-cost weeknight outing that works for a range of kid ages.</div>
+      <div class="tip">💡 <b>Insider tip:</b> Library events fill fast; get there 15 minutes early for a good table.</div>
+      <a href="https://events.thelibrarydistrict.org/event/16781112" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="daylabel">Tuesday, Aug. 4</div>
+    <div class="ev">
+      <div class="en">🔍 Cold Case Investigations: The Death of Alexander the Great</div>
+      <div class="ed">Clark County Library · 6–7pm · Free</div>
+      <div class="ed">A history-meets-forensics talk that's a great hook for older kids (10–15) who like mysteries and ancient history.</div>
+      <div class="tip">💡 <b>Insider tip:</b> Pair it with a quick dinner nearby on Flamingo before the 6pm start.</div>
+      <a href="https://events.thelibrarydistrict.org/event/16729339" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="ev">
+      <div class="en">🧘 Fitness on The Lawn: Vinyasa Yoga</div>
+      <div class="ed">The Lawn, Downtown Summerlin · 7pm · Free</div>
+      <div class="ed">Free outdoor evening yoga on the grass — an active, all-ages way to beat the heat once the sun drops.</div>
+      <div class="tip">💡 <b>Insider tip:</b> Bring your own mat and water; the lawn gets busy, so stake out space early.</div>
+      <a href="https://summerlin.com/event/fitness-on-the-lawn/" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="daylabel">Wednesday, Aug. 5</div>
+    <div class="ev">
+      <div class="en">🎊 End of Summer Carnival</div>
+      <div class="ed">Silver Mesa Recreation Center, North Las Vegas · 6–8pm · $3</div>
+      <div class="ed">A classic low-cost family carnival — games and activities aimed squarely at the 5–15 crowd before school starts.</div>
+      <div class="tip">💡 <b>Insider tip:</b> $3 admission is cash-friendly; go right at 6pm to beat the after-dinner rush.</div>
+      <a href="https://www.cityofnorthlasvegas.com/Home/Components/Calendar/Event/16548/716?curm=8&cury=2026" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="ev">
+      <div class="en">🎭 The Andrews Brothers (outdoor theatre)</div>
+      <div class="ed">Super Summer Theatre, Spring Mountain Ranch State Park · 8pm · From $28 (through Aug 22)</div>
+      <div class="ed">Bring-a-blanket outdoor musical theatre under the stars at a state park — a memorable family night out in the cool desert evening.</div>
+      <div class="tip">💡 <b>Insider tip:</b> Pack a picnic and layers; gates open early and lawn seating is first-come.</div>
+      <a href="https://supersummertheatre.org/" target="_blank" rel="noopener">Event details →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FEEL GOOD -->
+<div class="tab" id="fg">
+  <div class="card c-fg">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>VA launches trial to see if a weight-loss drug can help treat alcoholism in veterans</h3>
+    <p class="body">The Department of Veterans Affairs is starting a clinical trial to test whether semaglutide — the compound behind popular GLP-1 weight-loss drugs — can also help treat alcohol use disorder. Early signals that GLP-1 medications may curb cravings have raised hope for a new tool against a condition that disproportionately affects veterans. If it works, it could offer relief to thousands who have struggled with existing treatments.</p>
+  </div>
+  <div class="card c-fg">
+    <div class="meta">Air &amp; Space Forces Magazine · Aug 3</div>
+    <h3>Pilot ejects safely moments before F-35B crash at MCAS Miramar</h3>
+    <p class="body">A Marine Corps pilot safely ejected from an F-35B on Friday morning just before the jet crashed at Marine Corps Air Station Miramar in San Diego, according to military officials. No injuries were reported on the ground. The ejection system worked exactly as designed, bringing the aviator home safely from a serious mishap.</p>
+  </div>
+  <div class="otd">
+    <h4>📅 On This Day in History — August 3</h4>
+    <ul>
+      <li><b>1958</b> — The nuclear submarine USS <em>Nautilus</em> (SSN-571) became the first vessel to reach the geographic North Pole, cruising submerged beneath the Arctic ice cap.</li>
+      <li><b>1492</b> — Christopher Columbus set sail from Palos, Spain, on the first voyage that would carry him across the Atlantic.</li>
+      <li><b>1936</b> — Jesse Owens won the 100-meter final at the Berlin Olympics, the first of his four gold medals at those Games.</li>
+    </ul>
+  </div>
+</div>
+
+<footer>⚡ Daily Digest · Compiled from newsletter sources · Monday, August 3, 2026</footer>
+</div>
+
+<script>
+function showTab(id, btn){
+  var tabs=document.querySelectorAll('.tab');
+  for(var i=0;i<tabs.length;i++){ tabs[i].classList.remove('active'); }
+  document.getElementById(id).classList.add('active');
+  var btns=document.querySelectorAll('#tabbar button');
+  for(var j=0;j<btns.length;j++){ btns[j].classList.remove('active'); }
+  btn.classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
