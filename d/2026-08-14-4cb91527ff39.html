@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>⚡ Daily Digest — Friday, August 14, 2026</title>
+<style>
+:root { color-scheme: light }
+* { box-sizing: border-box }
+body { margin:0; padding:0; background:#f3f4f6; color:#111827;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5; }
+.wrap { max-width:820px; margin:0 auto; padding:0 14px 60px; }
+header.top { padding:22px 4px 10px; }
+header.top h1 { margin:0; font-size:30px; font-weight:800; letter-spacing:-.5px; }
+header.top .date { margin-top:4px; color:#4b5563; font-size:15px; font-weight:600; }
+header.top .sub { margin-top:6px; color:#6b7280; font-size:13px; }
+.breaking { margin:14px 0; background:#7f1d1d; color:#fff; border-radius:10px; padding:14px 16px; }
+.breaking .lbl { display:flex; align-items:center; gap:9px; font-weight:800; font-size:13px;
+  text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+.dot { width:11px; height:11px; border-radius:50%; background:#fca5a5;
+  animation:pulse 1.3s infinite; }
+@keyframes pulse { 0%{opacity:1;transform:scale(1)} 50%{opacity:.35;transform:scale(1.4)} 100%{opacity:1;transform:scale(1)} }
+.breaking p { margin:6px 0 0; font-size:15px; }
+.tabbar { position:sticky; top:0; z-index:5; background:#f3f4f6; padding:10px 0 8px;
+  display:flex; gap:8px; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.tabbar button { flex:0 0 auto; border:1px solid #d1d5db; background:#fff; color:#374151;
+  padding:8px 14px; border-radius:999px; font-size:14px; font-weight:600; cursor:pointer;
+  white-space:nowrap; }
+.tabbar button.active { background:#111827; color:#fff; border-color:#111827; }
+.tab { display:none; }
+.tab.active { display:block; }
+.card { background:#fff; border-radius:10px; padding:16px 18px; margin:14px 0;
+  box-shadow:0 1px 3px rgba(0,0,0,.06); border-left:5px solid #9ca3af; }
+.meta { font-size:12px; text-transform:uppercase; letter-spacing:.5px; color:#6b7280; font-weight:700; }
+.hl { font-size:18px; font-weight:800; margin:6px 0 8px; line-height:1.3; }
+.body { font-size:15px; color:#1f2937; }
+.sowhat { margin-top:12px; background:#f9fafb; border:1px solid #e5e7eb; border-radius:8px;
+  padding:10px 12px; font-size:14px; }
+.sowhat b { display:block; text-transform:uppercase; font-size:11px; letter-spacing:1px;
+  color:#6b7280; margin-bottom:3px; }
+.read { text-align:right; margin-top:10px; }
+.read a { font-size:13px; font-weight:700; color:#1d4ed8; text-decoration:none; }
+.subhead { font-size:14px; font-weight:800; color:#374151; margin:20px 2px 2px;
+  text-transform:uppercase; letter-spacing:.5px; }
+.events h3 { font-size:16px; margin:18px 2px 4px; }
+.evday { font-weight:800; font-size:15px; margin:16px 2px 6px; color:#0e7490; }
+.event { background:#fff; border-radius:9px; padding:12px 14px; margin:9px 0;
+  border-left:4px solid #38bdf8; box-shadow:0 1px 2px rgba(0,0,0,.05); }
+.event .en { font-weight:700; font-size:15px; }
+.event .ev { color:#6b7280; font-size:13px; margin:2px 0 5px; }
+.event .tip { font-size:13px; background:#f0f9ff; border-radius:6px; padding:6px 8px; margin-top:6px; }
+.event a { color:#0369a1; font-weight:600; text-decoration:none; font-size:13px; }
+.otd { background:#fff; border-radius:10px; padding:14px 18px; margin:14px 0;
+  border-left:5px solid #facc15; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.otd li { margin:7px 0; font-size:14px; }
+.otd b { color:#92400e; }
+footer { text-align:center; color:#9ca3af; font-size:12px; padding:26px 0 6px; }
+/* tab accent colors */
+#tab-defense .card{border-left-color:#ef4444}
+#tab-pacific .card{border-left-color:#14b8a6}
+#tab-europe .card{border-left-color:#6366f1}
+#tab-me .card{border-left-color:#f59e0b}
+#tab-tech .card{border-left-color:#a78bfa}
+#tab-feelgood .card{border-left-color:#facc15}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>⚡ Daily Digest</h1>
+  <div class="date">Friday, August 14, 2026</div>
+  <div class="sub">Operational brief for senior military leaders · DIME lens · 90 seconds per story</div>
+</header>
+
+<div class="breaking">
+  <div class="lbl"><span class="dot"></span> Breaking</div>
+  <p>A covert CIA program is reportedly behind the mysterious drone strikes on fishing boats near the Galápagos, with a surveillance aircraft flying from El Salvador toward the vessels shortly before the attacks, flight data shows. <em>(Washington Post)</em></p>
+</div>
+
+<div class="tabbar" id="tabbar">
+  <button class="active" data-tab="defense">🛡️ Defense</button>
+  <button data-tab="pacific">🌏 Pacific</button>
+  <button data-tab="europe">🇪🇺 Europe</button>
+  <button data-tab="me">🏜️ Middle East</button>
+  <button data-tab="tech">💻 Tech &amp; AI</button>
+  <button data-tab="cities">🏙️ Cities</button>
+  <button data-tab="feelgood">🌟 Feel Good</button>
+</div>
+
+<!-- DEFENSE -->
+<section class="tab active" id="tab-defense">
+  <div class="card">
+    <div class="meta">Breaking Defense · Aug 14</div>
+    <div class="hl">Army moves to "engage" enemy surveillance satellites and fight in the stratosphere</div>
+    <div class="body">The Army is orienting its space-superiority efforts toward countering adversary intelligence, surveillance, and reconnaissance (ISR) satellites and conducting what it calls "stratospheric warfare," Col. Joe Mroszcyck told Breaking Defense at the Space and Missile Defense Symposium. The push reflects a service acknowledgment that ground forces can no longer treat overhead ISR as an uncontested given, and that denying an adversary's targeting picture is now a ground-force mission — not just a Space Force one.</div>
+    <div class="sowhat"><b>So What</b>Enemy ISR now cues long-range fires against your formations within minutes; assume you are seen and plan for it. Ground commanders should press for organic and joint counter-ISR effects in scheme-of-maneuver planning rather than assuming Space Force handles the entire orbital fight.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Defense One · Aug 14</div>
+    <div class="hl">White House authorizes private cyber firms to strike foreign targets — the "digital mercenary" era</div>
+    <div class="body">A new White House policy revives what Defense One describes as "privateering for the digital age," authorizing private cyber firms to conduct offensive operations against foreign targets. The move blurs the line between state and commercial actors in the cyber domain and hands non-uniformed contractors authorities historically reserved for military and intelligence elements, raising questions about attribution, escalation control, and the law of armed conflict.</div>
+    <div class="sowhat"><b>So What</b>Offensive cyber effects in your theater may now originate from actors outside your chain of command, complicating deconfliction and escalation management. Confirm with your J3/J6 who holds authority for cyber effects in your AOR and how commercially originated operations will be deconflicted against your own.</div>
+    <div class="read"><a href="https://www.defenseone.com/policy/2026/08/warfare-becomes-engineering-era-digital-mercenary-dawns/415421" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+  <div class="card">
+    <div class="meta">Breaking Defense · Aug 14</div>
+    <div class="hl">Trump directive orders steam catapults back on carriers, a fifth public shipyard, and a submarine repair center</div>
+    <div class="body">A presidential memo directs the Navy to return to steam catapults on aircraft carriers, stand up a fifth public shipyard, and establish a new component repair center aimed at reducing chronic submarine repair delays. The catapult reversal walks back the electromagnetic launch system fielded on the Ford class, and the shipyard and repair investments target a maintenance backlog that has kept attack submarines and surface combatants tied up rather than deployable.</div>
+    <div class="sowhat"><b>So What</b>Fleet availability — not hull count — is the binding constraint on presence, and this directive signals years of yard turbulence and retrofits ahead. Planners relying on carrier or submarine availability should build in schedule risk and confirm maintenance-throughput assumptions with fleet maintenance authorities.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Defense One · Aug 14</div>
+    <div class="hl">Pentagon hands Palantir up to $244M in no-bid work</div>
+    <div class="body">A Pentagon memo directs agencies to find uses for Palantir's software and authorizes up to $244 million in sole-source work, but is silent on the justifications normally required for no-bid awards. Steering requirements toward a preferred vendor without documented sole-source rationale sidesteps competition rules and sets a precedent other primes and oversight bodies will scrutinize.</div>
+    <div class="sowhat"><b>So What</b>Program and requirements owners pushing data or C2 software should expect top-down pressure to standardize on a named vendor, with attendant audit exposure. Ensure any locally initiated sole-source justification is documented to withstand IG and GAO review.</div>
+    <div class="read"><a href="https://www.defenseone.com/business/2026/08/pentagon-palantir-no-bid/415400" target="_blank" rel="noopener">Read full article →</a></div>
+  </div>
+</section>
+
+<!-- PACIFIC -->
+<section class="tab" id="tab-pacific">
+  <div class="card">
+    <div class="meta">Institute for the Study of War · Aug 13</div>
+    <div class="hl">Putin makes first-ever visit to the disputed Kuril Islands, signaling to a rearming Japan</div>
+    <div class="body">Vladimir Putin visited Iturup (which Japan calls Etorofu), the largest of the disputed Kuril Islands, for the first time on August 13, meeting Pacific Fleet Commander-in-Chief Adm. Viktor Liina, the acting commander of the Eastern Military District's 68th Guards Army Corps, and the Sakhalin FSB border chief. The visit is a direct response to Japan's just-published 2026 Defense White Paper, which named Russia a critical threat; Putin criticized the paper and stressed the need to "ensure security" on "all of its borders." Prime Minister Takaichi condemned the trip and reiterated Japan's territorial claims — the two countries never signed a WWII peace treaty.</div>
+    <div class="sowhat"><b>So What</b>Moscow is opening a second, Pacific-facing pressure vector against a hardening US ally, stretching INDOPACOM's threat picture beyond China. Expect more Russian air and naval activity forcing Japanese scrambles near the Northern Territories; factor a more active Russian Eastern Military District into allied posture and ISR planning.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Breaking Defense · Aug 14</div>
+    <div class="hl">On Asia tour, DoD policy chief Colby praises AUKUS but warns "middle powers"</div>
+    <div class="body">Undersecretary of Defense for Policy Elbridge Colby opened a multi-nation Asia trip praising the AUKUS submarine and technology pact while cautioning regional "middle powers" that his message would be "realistic and perhaps bracing, but also reassuring." The framing signals continued US commitment to the trilateral pact alongside pressure on partners to raise defense spending and share more of the deterrence burden against China.</div>
+    <div class="sowhat"><b>So What</b>Allied burden-sharing expectations are rising even as Washington reaffirms core pacts — partners will read both reassurance and conditionality into US posture. Commanders working combined plans should anticipate partner questions about US reliability and be ready to translate "bracing" policy signals into concrete exercise and access asks.</div>
+  </div>
+  <div class="card">
+    <div class="meta">CSIS · Aug 14</div>
+    <div class="hl">China treats food security as both a vulnerability and a coercive tool</div>
+    <div class="body">A CSIS analysis argues Beijing's drive for food self-sufficiency reflects a genuine strategic vulnerability — heavy dependence on imported grain and fertilizer — while also functioning as an instrument of geopolitical leverage over trading partners. That dual character shapes Chinese behavior on everything from Belt and Road agricultural deals to how quickly Beijing might feel pressure in a prolonged blockade or conflict scenario.</div>
+    <div class="sowhat"><b>So What</b>Food and fertilizer supply lines are a real pressure point on Beijing and a factor in its escalation calculus around Taiwan and the South China Sea. Include agricultural chokepoints and import dependencies in theater assessments of Chinese resilience and coercive options.</div>
+  </div>
+</section>
+
+<!-- EUROPE -->
+<section class="tab" id="tab-europe">
+  <div class="card">
+    <div class="meta">Politico NatSec Daily · Aug 13</div>
+    <div class="hl">Kyiv splits over whether a US-brokered peace deal helps or corners Ukraine</div>
+    <div class="body">Senior Ukrainian leaders are increasingly convinced Washington must be party to any settlement with Russia, but are divided over the terms: one camp sees US diplomacy as the only path to ending the war, while another fears the administration — stung by stalled efforts on Iran and Gaza — will strong-arm Kyiv into a Moscow-friendly deal for a quick foreign-policy win. Trump's promised negotiating team (Witkoff and Kushner) has repeatedly pledged to visit Kyiv but has yet to arrive, even as it has traveled to Russia multiple times. Analysts note the battlefield tide is shifting in Kyiv's favor, giving the White House a rare chance to negotiate from a position of Ukrainian strength.</div>
+    <div class="sowhat"><b>So What</b>A negotiated endgame — favorable or imposed — could reshape NATO's eastern posture and US force commitments in Europe on short notice. EUCOM-aligned planners should war-game both a durable settlement and a coerced one, including implications for force rotations, security assistance flows, and reassurance to frontline allies.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Institute for the Study of War · Aug 13</div>
+    <div class="hl">Zelensky warns Ukraine's Patriot interceptor stocks are dangerously low ahead of winter</div>
+    <div class="body">President Zelensky said Ukraine needs far more US-produced Patriot interceptors than it is receiving to defend against Russian ballistic missile strikes expected to intensify over winter 2026–2027. He warned that Russia is exploiting very low Ukrainian interceptor stockpiles and is now launching roughly twice as many ballistic missiles per month as in 2025. Ukrainian forces meanwhile struck Russian oil infrastructure in Bashkortostan and, per reports, killed a Russian Navy captain in occupied Sevastopol via an IED.</div>
+    <div class="sowhat"><b>So What</b>Interceptor inventory — not launcher count — is the pacing item for Ukrainian air defense, and the same magazine-depth problem constrains US and allied stocks. Air-defense planners should track Patriot/PAC-3 production and allocation closely; demand signal from Ukraine will compete directly with CENTCOM and homeland requirements.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Breaking Defense · Aug 14</div>
+    <div class="hl">Poland floats first frigate under its major naval modernization program</div>
+    <div class="body">Poland launched the first Miecznik-class frigate under its flagship naval modernization effort, with delivery scheduled for 2029 and a second hull already under construction. The program is a marker of Warsaw's sustained defense-industrial investment as it positions itself as NATO's leading conventional land-and-sea power on the alliance's eastern flank.</div>
+    <div class="sowhat"><b>So What</b>Poland is building the industrial and naval capacity to anchor Baltic and eastern-flank defense, reducing reliance on US enablers over the coming decade. Planners should factor a more capable Polish maritime partner into Baltic contingency and burden-sharing assumptions — while noting 2029 timelines leave a near-term gap.</div>
+  </div>
+</section>
+
+<!-- MIDDLE EAST -->
+<section class="tab" id="tab-me">
+  <div class="card">
+    <div class="meta">Washington Post · Politico NatSec · Aug 13</div>
+    <div class="hl">US has lost about a quarter of its Reaper drone fleet in the Iran war</div>
+    <div class="body">The US military has lost at least 45 MQ-9 Reaper drones — roughly 25 percent of the fleet — during the war with Iran, many while conducting surveillance and strikes around the Strait of Hormuz. Because Reapers fly slowly and often at low altitude, they are relatively easy targets for Iran and its proxies in Yemen and Iraq; each aircraft costs $30–50 million depending on sensors and weapons. The attrition is straining US ISR and strike capacity even as Washington seeks to wind the conflict down.</div>
+    <div class="sowhat"><b>So What</b>Permissive-environment ISR platforms are attritable, not survivable, against a capable integrated air defense — a lesson that applies directly to any near-peer fight. Commanders relying on MQ-9-class ISR should plan for high loss rates, prioritize survivable/expendable alternatives, and treat persistent overhead coverage as a contested resource.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Politico NatSec Daily · Aug 13</div>
+    <div class="hl">USS George Washington to relieve an overstretched USS Abraham Lincoln in the Middle East</div>
+    <div class="body">The Navy is preparing to send the carrier USS George Washington to relieve the USS Abraham Lincoln, which has been at sea more than eight months supporting the bombing campaign against Iran and the US blockade of Iranian ports. Lawmakers are pressing Defense Secretary Hegseth over reported poor conditions aboard the Lincoln — declining morale, and Navy Times and Stars and Stripes reports that sailors attempted to jump overboard — which the Pentagon has vehemently denied, with Hegseth calling the accounts "completely misrepresented."</div>
+    <div class="sowhat"><b>So What</b>Sustained CENTCOM carrier presence is being purchased with extended deployments that erode crew readiness and retention. Leaders should watch for reduced sortie generation and manning strain as the norm during prolonged surges, and weigh presence demands against the human-capital bill coming due.</div>
+  </div>
+  <div class="card">
+    <div class="meta">Politico NatSec Daily · Aug 13</div>
+    <div class="hl">US ambassador condemns West Bank settler seizure of Palestinian homes as "horrific act of terror"</div>
+    <div class="body">US Ambassador to Israel Mike Huckabee — a staunch Israel backer — issued an unusually sharp rebuke of Israeli settler violence after settlers surrounded three homes in the West Bank village of Qusra, throwing stones and blocking food, water, and residents' movement for days. Israeli soldiers detained one Israeli and dismantled what the army called two illegal outposts. The episode adds to a pattern of settler attacks under the Netanyahu government that is straining US-Israel messaging.</div>
+    <div class="sowhat"><b>So What</b>Rising settler violence is an information-domain vulnerability that adversaries and regional actors exploit to erode support for US-Israel policy. Commanders in the region should anticipate its effect on partner sentiment and force-protection posture, and track whether Washington's rhetoric translates into any policy shift.</div>
+  </div>
+</section>
+
+<!-- TECH & AI -->
+<section class="tab" id="tab-tech">
+  <div class="subhead">🤖 AI &amp; Competition</div>
+  <div class="card">
+    <div class="meta">Breaking Defense · Aug 14</div>
+    <div class="hl">Intelligence Community builds toward "agents managing agents"</div>
+    <div class="body">DIA, NGA, and the FBI are building the infrastructure and guardrails to field increasingly autonomous AI — systems where AI agents supervise and task other agents to accelerate intelligence workflows. The move promises faster analysis across vast data holdings but concentrates risk in the guardrails, orchestration, and human-oversight mechanisms that keep autonomous chains from compounding errors or being manipulated.</div>
+    <div class="sowhat"><b>So What</b>Intelligence products reaching commanders will increasingly be machine-generated through agent chains, changing how confidence and provenance must be assessed. Consumers of finished intelligence should demand clarity on where autonomy sits in the pipeline and how outputs are validated before acting on them.</div>
+  </div>
+  <div class="subhead">🔒 Cyber &amp; Emerging Tech</div>
+  <div class="card">
+    <div class="meta">TLDR Cybersecurity · Aug 14</div>
+    <div class="hl">VMware vCenter RCE flaw and a campaign targeting Salesforce and ServiceNow</div>
+    <div class="body">Researchers flagged a remote-code-execution vulnerability in VMware vCenter alongside an active campaign abusing unauthenticated guest access to hit Salesforce and ServiceNow environments, reportedly using a single Go binary across multiple SaaS platforms. vCenter sits at the heart of virtualized infrastructure, so an RCE there is a crown-jewel target; the SaaS campaign shows adversaries increasingly pivoting through trusted enterprise platforms rather than perimeter breaches.</div>
+    <div class="sowhat"><b>So What</b>Virtualization and SaaS management planes are high-value single points of failure that adversary and criminal actors are actively probing. Direct network owners to prioritize vCenter patching and audit guest/unauthenticated access paths on mission-support SaaS before these techniques are weaponized against DoD networks.</div>
+  </div>
+</section>
+
+<!-- CITIES -->
+<section class="tab" id="tab-cities">
+  <div class="events">
+    <h3>🎯 What To Do — Vegas Family Guide</h3>
+    <p style="font-size:13px;color:#6b7280;margin:2px 2px 8px">Curated for service members with school-age kids · Aug 14–16 · source: City Cast Las Vegas</p>
+
+    <div class="evday">Friday, Aug. 14</div>
+    <div class="event">
+      <div class="en">🐦 Birding After Hours</div>
+      <div class="ev">Henderson Bird Viewing Preserve · 6–8pm · Free · Henderson</div>
+      <div>An easy, free evening at the ponds when the desert cools and the birds get active — low-key outdoor time that works for a range of kid ages.</div>
+      <div class="tip">💡 Bring water and a cheap pair of binoculars; the preserve's nine ponds are flat, stroller- and little-legs-friendly.</div>
+      <a href="https://www.cityofhenderson.com/Home/Components/Calendar/Event/6217/1786?widgetId=1283" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="event">
+      <div class="en">🐼 Dive-In Movie Night: Kung Fu Panda</div>
+      <div class="ev">M Pool, M Resort · 7:30pm · $10 · Henderson</div>
+      <div>Family poolside movie night — swim while a crowd-pleaser plays on the big screen. Cheap, casual, and easy to bail early if bedtime looms.</div>
+      <div class="tip">💡 Arrive before dusk to claim a good spot; pack towels and a light layer for when the desert night cools off.</div>
+      <a href="https://www.facebook.com/events/1277319511004813" target="_blank" rel="noopener">Event details →</a>
+    </div>
+
+    <div class="evday">Saturday, Aug. 15</div>
+    <div class="event">
+      <div class="en">🚒 Fire Station 81 Open House</div>
+      <div class="ev">Fire Station 81 · 10am–1pm · Free · Henderson</div>
+      <div>Climb on the trucks, meet the crews, and let the kids see the gear up close — a reliably big hit with the 5–15 crowd and completely free.</div>
+      <div class="tip">💡 Go early before the midday heat; the apparatus-bay tours and hose demos are best in the first hour.</div>
+      <a href="https://www.cityofhenderson.com/Home/Components/Calendar/Event/6348/1786?widgetId=1283" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="event">
+      <div class="en">🌙 Night Hike at Ice Age Fossils State Park</div>
+      <div class="ev">Ice Age Fossils State Park · 7:30pm · $3 · All ages · Tule Springs</div>
+      <div>A ranger-led evening walk through a genuine fossil site north of town — desert-adventure feel at kid pace, and a bargain at three dollars.</div>
+      <div class="tip">💡 Closed-toe shoes and a headlamp per kid; the after-dark start keeps it cool and makes the stars part of the show.</div>
+      <a href="https://parks.nv.gov/events/night-hike-21" target="_blank" rel="noopener">Event details →</a>
+    </div>
+
+    <div class="evday">Sunday, Aug. 16</div>
+    <div class="event">
+      <div class="en">🌮 Taco &amp; Tequila Street Fiesta</div>
+      <div class="ev">Centennial Hills Park · 12–9pm · All ages · Buffalo &amp; Elkhorn</div>
+      <div>An all-ages outdoor food-and-music street fiesta in a big neighborhood park — go for the daytime family window of tacos, vendors, and open grass to run on.</div>
+      <div class="tip">💡 Hit it early afternoon with the kids before the evening crowd; shade and hydration are the whole game in August.</div>
+      <a href="https://www.eventbrite.com/e/taco-tequila-street-fiesta-tickets-1992705609119" target="_blank" rel="noopener">Event details →</a>
+    </div>
+    <div class="event">
+      <div class="en">🥾 Trail Ready</div>
+      <div class="ev">Sunrise Library · 3pm · Free · Washington &amp; Christy</div>
+      <div>A free session on getting out on Southern Nevada's trails safely — a useful primer before the fall hiking season for a family that likes the outdoors.</div>
+      <div class="tip">💡 Good rainy-plan-B or beat-the-heat option; pair it with a cooler morning hike at Red Rock the same weekend.</div>
+      <a href="https://events.thelibrarydistrict.org/event/16913653" target="_blank" rel="noopener">Event details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEEL GOOD -->
+<section class="tab" id="tab-feelgood">
+  <div class="card">
+    <div class="meta">The Japan Times · Aug 14</div>
+    <div class="hl">One historian's decades of work preserves how ordinary Japanese lived through WWII</div>
+    <div class="body">Years of painstaking research by a late historian in Utsunomiya, Tochigi Prefecture, have brought to light the lesser-known civilian experience of the war, drawing on US strategic-bombing survey records to reconstruct how residents endured and remembered it. His lifetime of quiet, unpaid effort gave a community a fuller account of its own history — a reminder that the work of remembrance is often carried by a single dedicated person.</div>
+  </div>
+  <div class="otd">
+    <div style="font-weight:800;margin-bottom:6px">📅 On This Day in History — August 14</div>
+    <ul>
+      <li><b>1945</b> — Japan announced its acceptance of Allied surrender terms, effectively ending World War II and giving rise to V-J Day celebrations across the United States.</li>
+      <li><b>1935</b> — President Franklin D. Roosevelt signed the Social Security Act into law, creating the framework for old-age and unemployment benefits still in use today.</li>
+      <li><b>2003</b> — A massive blackout cascaded across the northeastern US and Canada, leaving roughly 50 million people without power and exposing the fragility of the interconnected grid.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Compiled from Gmail newsletters over a rolling 36-hour window · Friday, August 14, 2026</footer>
+</div>
+
+<script>
+(function () {
+  var bar = document.getElementById('tabbar');
+  var buttons = bar.querySelectorAll('button');
+  function showTab(id) {
+    var tabs = document.querySelectorAll('.tab');
+    for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove('active');
+    var el = document.getElementById('tab-' + id);
+    if (el) el.classList.add('active');
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].classList.toggle('active', buttons[j].getAttribute('data-tab') === id);
+    }
+    window.scrollTo(0, 0);
+  }
+  for (var k = 0; k < buttons.length; k++) {
+    buttons[k].addEventListener('click', function () {
+      showTab(this.getAttribute('data-tab'));
+    });
+  }
+})();
+</script>
+</body>
+</html>
